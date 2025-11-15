@@ -36,13 +36,10 @@ export function BlogTeasers() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Latest Health & Safety Insights
+            সাশ্রয়ী মূল্যে দ্রুত ও নির্ভরযোগ্য ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস
           </h2>
           <p className=" text-muted-foreground max-w-3xl mx-auto">
-            Stay informed with expert advice, emergency preparedness tips, and
-            important health information from our medical health care
-            professionals. The best and quality ambulance is available in
-            anytime, anywhere.
+            সাশ্রয়ী মূল্যে ২৪/৭ দ্রুত ও নিরাপদ ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস, যেখানে অভিজ্ঞ স্টাফ ও আধুনিক সরঞ্জাম দিয়ে রোগী বা মৃতদেহ নিরাপদভাবে পরিবহন করা হয়। ঢাকা হতে সকল জেলায় রোগী ও লাশ পরিবহনে জরুরী এ্যাম্বুলেন্স সার্বিস বুকিং করতে হেল্পলাইনে কল করুনঃ ০১৭১০০৬০০২০
           </p>
         </div>
 

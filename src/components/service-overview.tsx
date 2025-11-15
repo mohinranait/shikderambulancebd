@@ -7,58 +7,58 @@ import Link from "next/link";
 export function ServiceOverview() {
   const services = [
     {
-      title: "Ac Ambulance Service",
+      title: "এসি এ্যাম্বুলেন্স সার্বিস",
       description:
-        "AC Ambulance Service ensures safe, comfortable, and temperature-controlled patient transport, ideal for critical cases and long-distance transfers.",
+        "এসি অ্যাম্বুলেন্স সার্ভিস রোগীর আরাম এবং নিরাপত্তাকে সর্বোচ্চ গুরুত্ব দিয়ে তৈরি। গরম আবহাওয়া বা দীর্ঘ যাত্রার ক্ষেত্রে এসি পরিবেশ রোগীর শারীরিক চাপ কমায় এবং আরামদায়ক পরিবহন নিশ্চিত করে। এতে প্রয়োজনীয় চিকিৎসা সরঞ্জাম, অভিজ্ঞ স্টাফ এবং দ্রুত সাড়া দেওয়ার সুবিধা থাকে, যা জরুরি অবস্থায় নির্ভরযোগ্য সহায়তা প্রদান করে।",
 
       image: "/Shikder-Ambulance-Service-Ac-Ambulance.jpg",
       features: [
-        "Quality Ambulance",
-        "Controled tempreture of Ambulance",
-        "Oxygen is free in Dhaka City",
-        " Anytime, Anywhere is Available",
+        "কোয়ালিটি অ্যাম্বুলেন্স সার্ভিস",
+        "এসি নিয়ান্তনকারী অ্যাম্বুলেন্স সার্ভিস",
+        "ঢাকা সিটিতে অক্সিজেন ফ্রী",
+        "ঢাকা সিটিতে যেকোন সময়, যেকোন এলাকায় সেবা",
       ],
       link:"/ac-ambulance-service"
     },
     {
-      title: "Non Ac Ambulance Service",
+      title: "নন-এসি অ্যাম্বুলেন্স সার্ভিস",
       description:
-        "Non-AC Ambulance Service offers affordable, reliable patient transport within the city, ideal for stable patients and short-distance transfers.",
+        "নন-এসি অ্যাম্বুলেন্স সার্ভিস হলো সাশ্রয়ী ও বাজেট-ফ্রেন্ডলি জরুরি পরিবহন ব্যবস্থা। সাধারণ রোগী পরিবহনের জন্য এতে সব প্রয়োজনীয় মৌলিক চিকিৎসা সুবিধা থাকে। কম খরচে দ্রুত রোগীকে হাসপাতাল বা চিকিৎসা কেন্দ্রে পৌঁছে দিতে এই সার্ভিসটি জনপ্রিয়। নিরাপত্তা, সময়মতো সাড়া এবং পেশাদার টিমের সহায়তা এটিকে আরও বিশ্বস্ত করে।",
 
       image: "/Shikder-Ambulance-Service-Non-Ac-Ambulance.jpg",
       features: [
-        "Wheelchair Accessible",
-        "Stretcher Transport",
-        "Medical Supervision",
-        "Insurance Accepted",
+        "হুইল চেয়ার",
+        "স্ট্রেচার সাপোর্ট",
+        "মেডিকেল সাপোর্ট",
+        "জরুরী অ্যাম্বুলেন্স সেবা ২৪/৭",
       ],
       link:"/non-ac-ambulance"
     },
     {
-      title: "Life Support Ambulance Service",
+      title: "লাইফ সাপোর্ট অ্যাম্বুলেন্স সার্ভিস (ICU/CCU)",
       description:
-        "Life Support Ambulance Service provides critical patients with advanced medical equipment and trained staff for safe, emergency transfers anytime, anywhere.",
+        "লাইফ সাপোর্ট অ্যাম্বুলেন্স গুরুতর বা সংকটজনক রোগীর জন্য উন্নত চিকিৎসা ব্যবস্থাসম্পন্ন পরিবহন। এতে ICU সেটআপ, ভেন্টিলেটর, মনিটরিং সিস্টেম, অক্সিজেন ও অন্যান্য লাইফ সাপোর্ট সরঞ্জাম থাকে। অভিজ্ঞ প্যারামেডিক ও টেকনিশিয়ান সার্বক্ষণিক মনিটরিং করে রোগীর অবস্থাকে স্থিতিশীল রাখে। জরুরি, দুর্ঘটনা বা ক্রিটিক্যাল কন্ডিশনে এই সার্ভিস রোগীর জীবন রক্ষায় অত্যন্ত কার্যকর।",
 
       image: "/Shikder-Ambulance-Service-life-support-Ambulance.jpg",
       features: [
-        "ICU-Level Care",
-        "Ventilator Support",
-        "Specialized Nurses",
-        "Hospital-to-Hospital",
+        "আই.সি.ইউ অ্যাম্বুলেন্স সাপোর্ট ",
+        "ভেন্টিলেটর অ্যাম্বুলেন্স সার্ভিস",
+        "ডাক্তার ও ব্রাদার সাপোর্ট",
+        "হাসপাতাল টু হাসপাতার",
       ],
       link:"/icu-ambulance-service"
     },
     {
-      title: "Dead Body Carrier Freezing Ambulance Service",
+      title: "লাশবাহী ফ্রিজার অ্যাম্বুলেন্স সার্ভিস",
       description:
-        "Freezing Ambulance Service safely transports deceased bodies long distances, preserving them in temperature-controlled freezing units with dignity.",
+        "লাশবাহী ফ্রিজার অ্যাম্বুলেন্স সার্ভিস মৃতদেহ দীর্ঘ সময় সংরক্ষণ এবং দূরবর্তী স্থানে পরিবহনের জন্য অত্যন্ত গুরুত্বপূর্ণ। উন্নত ফ্রিজিং সিস্টেম মৃতদেহকে নিরাপদভাবে ঠান্ডা অবস্থায় রাখে, যাতে দূরপথেও মরদেহের অবস্থা পরিবর্তন না হয়। সম্মানজনক, নিরাপদ এবং দ্রুত ডেডবডি পরিবহনের জন্য এটি পরিবারের জন্য মানসিক স্বস্তি প্রদান করে।",
 
       image: "/Freezing-Ambulance-service-Shikder-ambulance.jpg",
       features: [
-        "It has a frozen box",
-        "High Quality steel stretchers",
-        "Tempresure: -5 to -22 are available",
-        "Emergency Response",
+        "ফ্রোজেন বক্স/ফ্রিজার কেবিন থাকে",
+        "কোয়ালিটি স্টিলের স্ট্রেচার",
+        "তাপমাত্রাঃ (-৫ টু -২২) ডিগ্রী",
+        "লাশ পরিবহন ও সংরক্ষন সাপোর্ট",
       ],
         link:"/freezing-ambulance-service"
     },
@@ -69,20 +69,19 @@ export function ServiceOverview() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Shikder Ambulance Services 24/7
+            শিকদার অ্যাম্বুলেন্স সার্ভিস, দ্রুত এবং নিরাপদ সেবা
           </h2>
           <p className=" text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive the best emergency Ambulance services in Bangladesh.
-            We provide different types of Ambulances. The best{" "}
+            শিকদার অ্যাম্বুলেন্স সার্ভিস দ্রুত, নিরাপদ ও নির্ভরযোগ্য জরুরি পরিবহন প্রদান করে। ২৪/৭ সেবা। এসি, নন-এসি অ্যাম্বুলেন্স, লাইফ সাপোর্ট অ্যাম্বুলেন্স এবং {" "}
             <a
               href="https://24ambulance.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 "
+              className="text-blue-600"
             >
-              Quality Ambulance Service
+              লাশবাহী ফ্রিজিং অ্যাম্বুলেন্স সার্ভিস
             </a>{" "}
-            is available in the all districts of Bangladesh.
+            সহ ঢাকার যেকোনো স্থানে তাৎক্ষণিক সহায়তা পৌঁছে।
           </p>
         </div>
 

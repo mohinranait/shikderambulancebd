@@ -12,48 +12,49 @@ const FaqComponent = () => {
     {
       id: "item-1",
       icon: Package,
-      title: "What Services Does Shikder Ambulance Provide?", content: [
-        "Shikder Ambulance provides a wide range of emergency and non-emergency ambulance services across Dhaka and all districts in Bangladesh. Our services include AC and Non-AC ambulances, ICU/CCU life support ambulances, and freezing vans for deceased body transport. We ensure timely, safe, and professional transportation of patients and deceased individuals to hospitals, homes, or desired destinations with complete care and respect.",
+      title: "শিকদার অ্যাম্বুলেন্স সার্ভিস ২৪/৭ কি সেবা প্রদান করে?",
+      content: [
+        "হ্যাঁ, আমরা ঢাকা শহরে ২৪ ঘন্টা, সপ্তাহের ৭ দিন জরুরি রোগী ও মৃতদেহ পরিবহন সেবা প্রদান করি।",
       ],
     },
     {
       id: "item-2",
       icon: Truck,
-      title: "How quickly can you send an ambulance?",
+      title: "অ্যাম্বুলেন্স বুক করার পদ্ধতি কী?",
       content: [
-        "In Dhaka city, we typically reach your location within 10 to 20 minutes, depending on traffic and distance. For inter-district services, arrival time depends on the location and road conditions. We always try our best to minimize waiting time in emergency situations",
+        "আপনি ফোন কল, হটলাইন বা অনলাইন বুকিং-এর মাধ্যমে দ্রুত অ্যাম্বুলেন্স বুক করতে পারেন।",
       ],
     },
     {
       id: "item-3",
       icon: Truck,
-      title: "Do you operate only in Dhaka?",
+      title: "ঢাকার বাইরে কি অ্যাম্বুলেন্স পাওয়া যায়?",
       content: [
-        " No. While our head office is based in Dhaka, we offer ambulance services in all 64 districts of Bangladesh. Whether you’re in a remote village or a busy city, we can reach you with our well-coordinated network. Our long-distance transport options ensure that patients or deceased bodies can be transferred from one district to another safely.",
+        "হ্যাঁ, আমরা প্রয়োজন অনুযায়ী ঢাকার বাইরেও রোগী বা মৃতদেহ পরিবহন করি।",
       ],
     },
     {
       id: "item-4",
       icon: Truck,
-      title: "How can I contact Shikder Ambulance?",
+      title: "সাশ্রয়ী মূল্যের অ্যাম্বুলেন্স কীভাবে পাওয়া যায়?",
       content: [
-        "You can contact us by calling our 24/7 emergency hotline. We also accept inquiries and advance bookings by phone, website contact form, or social media. Our friendly support team is always ready to assist you with your needs. If you need Ambulance then Contact Us. ",
+        "আমরা প্রতিযোগিতামূলক এবং বাজেট-ফ্রেন্ডলি মূল্যে দ্রুত ও নিরাপদ পরিবহন নিশ্চিত করি।",
       ],
     },
     {
       id: "item-5",
       icon: Truck,
-      title: "How can I book an ambulance?",
+      title: "অনলাইন বুকিং কি নিরাপদ এবং সহজ?",
       content: [
-        "Booking with Shikder Ambulance is fast and simple. Just call our dedicated hotline, and our support team will guide you through the process. You’ll need to provide the pickup location, destination, type of ambulance required, and patient condition (if applicable). We aim to dispatch the ambulance as quickly as possible after booking confirmation.",
+        "হ্যাঁ, অনলাইন বুকিং সম্পূর্ণ নিরাপদ এবং তাৎক্ষণিক নিশ্চিতকরণ পাওয়া যায়।",
       ],
     },
     {
       id: "item-6",
       icon: RotateCcw,
-      title: "Can I book an ambulance in advance?",
+      title: "ঢাকার বাইরে কি সেবা পাওয়া যায়?",
       content: [
-        "Yes, advance booking is available for planned hospital admissions, medical checkups, patient transfers, or events. This helps us arrange the right type of ambulance for your specific needs at the scheduled time without delay.",
+        "হ্যাঁ, ঢাকার বাইরে রোগী বা মৃতদেহ পরিবহনের জন্য প্রয়োজন অনুযায়ী সার্ভিস রয়েছে।",
       ],
     },
   ];
@@ -65,10 +66,10 @@ const FaqComponent = () => {
           <HelpCircle className="w-8 h-8 text-white" />
         </div>
         <h2 className="text-3xl md:text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
-          Frequently Asked Questions
+          কাষ্টমারদের সচরাচর জিজ্ঞাসা
         </h2>
         <p className=" text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Quick answers to common questions about our emergency patient transport services.
+          শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকা শহরে ২৪/৭ জরুরি রোগী ও মৃতদেহ পরিবহন সেবা প্রদান করে। সহজ বুকিং ফোন কল বা অনলাইনের মাধ্যমে করা যায়। সাশ্রয়ী মূল্যে, দ্রুত এবং নিরাপদ পরিবহন নিশ্চিত করা হয়।
         </p>
       </div>
       <div className="">

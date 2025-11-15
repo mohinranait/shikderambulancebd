@@ -5,43 +5,43 @@ export function WhyChooseUs() {
   const features = [
     {
       icon: Clock,
-      title: "Fast Response Time",
-      description: "Average 10-minutes response time with our strategically located fleet across the Dhaka City.",
+      title: "২৪/৭ জরুরি সেবা",
+      description: "শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকা শহরে দিন-রাত, সপ্তাহের ৭ দিন, যেকোনো জরুরি অবস্থায় দ্রুত সাড়া দেয়।",
       color: "text-primary",
       bgColor: "bg-blue-50",
     },
     {
       icon: Users,
-      title: "Trained Professionals",
-      description: "Certified paramedics and EMTs with years of emergency medical experience.",
+      title: "দ্রুত ও নিরাপদ পরিবহন",
+      description: "আমাদের আধুনিক সরঞ্জাম ও প্রশিক্ষিত স্টাফ নিশ্চিত করে রোগী ও মৃতদেহ দ্রুত এবং নিরাপদভাবে গন্তব্যে পৌঁছায়।",
       color: "text-green-600",
       bgColor: "bg-green-50",
     },
     {
       icon: MapPin,
-      title: "GPS-Enabled Fleet",
-      description: "Real-time tracking and optimal route planning for fastest possible arrival.",
+      title: "অ্যাম্বুলেন্স সার্ভিসের ধরন সমূহ",
+      description: "এসি অ্যাম্বুলেন্স, নন-এসি অ্যাম্বুলেন্স, এবং লাশবাহী ফ্রিজিং অ্যাম্বুলেন্স। ২৪/৭ জরুরি সেবা",
       color: "text-purple-600",
       bgColor: "bg-purple-50",
     },
     {
       icon: DollarSign,
-      title: "Affordable Pricing",
-      description: "The Patient Transport Service in Bangladesh. We offering to transport at Affordable Pricing with Online Booking facilitices.",
+      title: "সাশ্রয়ী মূল্যে অ্যাম্বুলেন্স সেবা",
+      description: "ঢাকায় দ্রুত, নিরাপদ এবং সাশ্রয়ী মূল্যের অ্যাম্বুলেন্স সার্ভিসের জন্য শিকদার অ্যাম্বুলেন্স সঠিক পছন্দ।",
       color: "text-accent-foreground",
       bgColor: "bg-accent",
     },
     {
       icon: Shield,
-      title: "Advanced Equipment",
-      description: "State-of-the-art medical equipment and the basic life support systems is available in every ambulance.",
+      title: "দ্রুত রেসপন্স টাইম",
+      description: "জরুরি অবস্থায় দ্রুত রেসপন্স ও এক্সপ্রেস ডেলিভারি নিশ্চিত করে, যাতে জীবন রক্ষা করা যায়।",
       color: "text-red-600",
       bgColor: "bg-red-50",
     },
     {
       icon: Stethoscope,
-      title: " Patient Transport Ambulances",
-      description: "Round-the-clock availability with direct hospital coordination and communication.",
+      title: "সহজ বুকিং ও হটলাইন সেবা",
+      description: "ফোন কল বা হটলাইনের মাধ্যমে সহজেই অ্যাম্বুলেন্স বুক করা যায়।",
       color: "text-teal-600",
       bgColor: "bg-teal-50",
     },
@@ -51,10 +51,9 @@ export function WhyChooseUs() {
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Why Choose Shikder Ambulance Service?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">কেন শিকদার অ্যাম্বুলেন্স সার্ভিস বেছে নিবেন?</h2>
           <p className=" text-muted-foreground max-w-3xl mx-auto">
-            We provide reliable, professional emergency Ambulance services with a commitment to saving lives and ensuring
-            the best possible patient care. Anytime, Anywhere is Available.
+            শিকদার অ্যাম্বুলেন্স সার্ভিস দ্রুত, নিরাপদ এবং মানসম্মত সেবা প্রদান করে। রোগী পরিবহনে এসি, নন-এসি অ্যাম্বুলেন্স, এবং মৃতদেহ পরিবহনে লাশবাহী ফ্রিজিং গাড়ির সেবা দিয়ে থাকি। প্রতিটি পরিবহন নিরাপদ, নির্ভরযোগ্য এবং সম্মানজনক হয়। সার্ভিসের প্রতিটি ধাপেই মান নিয়ন্ত্রণ বজায় রাখা হয়, যা গ্রাহকের আস্থা ও সন্তুষ্টি অর্জনে সাহায্য করে।
           </p>
         </div>
 

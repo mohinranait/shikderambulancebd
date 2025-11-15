@@ -43,7 +43,7 @@ export function Header() {
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
                 Shikder Ambulance
               </h2>
-              <p className="text-xs text-gray-600">Patient Transport Service</p>
+              <p className="text-xs text-gray-600">রোগী ও লাশ পরিবহন সেবা</p>
             </div>
           </Link>
 

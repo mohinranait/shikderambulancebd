@@ -15,63 +15,63 @@ export default function PremiumReviewSection() {
   const reviews = [
     {
       id: 1,
-      name: "Md. Asraful Islam",
-      role: "Emergency Coordinator",
+      name: "মোঃ রফিকুল ইসলাম",
+      role: "কো-অরডিনেটর",
       company: "City General Hospital",
       avatar:
         "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       content:
-        " We booked them during Eid holidays from Dhaka to Mymensingh, and they responded instantly. It’s comforting to know a service like this is available 24/7.",
+        "জরুরি সময়ে শিকদার অ্যাম্বুলেন্স আমাদের পরিবারের পাশে দাঁড়িয়েছে। দ্রুত ও নিরাপদ পরিবহন, ICU অ্যাম্বুলেন্সের স্টাফও খুবই সহায়ক। ধন্যবাদ।",
       location: "Dhaka, Bangladesh",
     },
     {
       id: 2,
-      name: "Dr. Mehedi Hassan",
+      name: "আশরাফুল ইসলাম",
       role: "Madical Manager",
       company: "Popular Hospital",
       avatar:
         "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       content:
-        "I needed an emergency ambulance at midnight in Dhaka, and Shikder Ambulance arrived within 25 minutes. The driver was polite, and the ambulance was clean and well-equipped. Highly recommend!",
+        "আমাদের মৃতদেহ ফ্রিজিং অ্যাম্বুলেন্সের মাধ্যমে নিরাপদভাবে গৃহস্থাল থেকে হসপিটালে পাঠানো হয়েছে। সার্ভিসটি খুবই পেশাদার এবং সম্মানজনক।",
       location: "Uttara, Bangladesh",
     },
     {
       id: 3,
-      name: "Dr. Rasida Akter Tuly",
+      name: "মোসাঃ মারিয়া চৌধুরী",
       role: "Manager",
       company: "Regional Medical Center",
       avatar:
         "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       content:
-        "Unlike other services, Shikder gave us a clear quote over the phone and didn’t add any hidden charges. Great value for such professional service.",
+        "মিরপুর থেকে হাসপাতালে রোগী পরিবহন করতে শিকদার অ্যাম্বুলেন্স ব্যবহার করেছি। এসি অ্যাম্বুলেন্স আর প্যারামেডিক স্টাফ খুবই কার্যকর।",
       location: "Barisal Sadar, Bangladesh",
     },
     {
       id: 4,
-      name: "Sakib Al Hassan",
+      name: "শামীম চৌধুরী",
       role: "General Manager",
       company: "Bilash Bozon",
       avatar:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       content:
-        "Reliable, efficient, and always available when we need them most. Their 24/7 service has been invaluable for our emergency department operations.",
-      location: "Faridpur, Bangladesh",
+        "২৪/৭ হটলাইনে কল করার পর অ্যাম্বুলেন্স খুব দ্রুত পৌঁছেছে। অভিজ্ঞ স্টাফ এবং মানসম্মত সার্ভিস। পুরো অভিজ্ঞতা সন্তোষজনক।",
+      location: "ফরিদপুর, বাংলাদেশ",
     },
     {
       id: 5,
-      name: "Dr. Siddikur Rahaman",
+      name: "মোঃ শরিফুল ইসলাম",
       role: "Emergency Physician",
       company: "Desh Bangla Medical",
       avatar:
         "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       content:
-        "I was very impressed with how quickly they picked up the call and dispatched an ambulance. The communication from their team was clear and helpful throughout.",
-      location: "Barguna, Bangladesh",
+        "দূরপাল্লার রোগী পরিবহনেও তারা খুব নির্ভরযোগ্য। লাইফ সাপোর্ট অ্যাম্বুলেন্সের সুবিধা এবং দ্রুত সাড়া সত্যিই অসাধারণ।",
+      location: "বরগুনা সদর, বরিশাল।",
     },
   ];
 
@@ -123,10 +123,10 @@ export default function PremiumReviewSection() {
             <Users className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6">
-            What Our Clients Say
+            আমাদের ক্লায়েন্টদের রিভিও
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Shikder Ambulance is the Trusted Partner to the people by serve. We are always ready to provode emergency ambulance service in the all districts of Bangladesh.
+            শিকদার অ্যাম্বুলেন্স মানুষের বিশ্বাসযোগ্য সহযোগী। বাংলাদেশের সকল জেলার জন্য জরুরি অ্যাম্বুলেন্স সেবা প্রদানের জন্য সর্বদা প্রস্তুত। ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস পেতে যেকোন সময় যোগাযোগ করুন।
           </p>
         </div>
 

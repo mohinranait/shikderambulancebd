@@ -13,19 +13,14 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <Badge className="bg-red-500 hover:bg-red-600 text-white px-4 py-2">
-                We’re Always Ready to Serve
+                যেকোন সময়, যেকোন এলাকায়
               </Badge>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-normal">
-                Shikder Ambulance Service in Dhaka
-                <span className="text-primary block"> Best Reliable 24/7 </span>
+                শিকদার অ্যাম্বুলেন্স সার্ভিস,
+                <span className="text-primary block"> জরুরি সেবা ২৪/৭ </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Welcome to <b>Shikder Ambulance Service</b> in Dhaka,
-                Bangladesh. Looking for a reliable Ambulance? You have come to
-                the right place. We guarantee your safe and comfortable arrival
-                at your destination. <b>Online Booking and Money Receipt</b> is
-                Available.
-              </p>
+                শিকদার অ্যাম্বুলেন্স সার্ভিস, ঢাকা হতে সকল জেলায় রোগী ও লাশ পরিবহনে ইমার্জেন্সি এ্যাম্বুলেন্স সার্ভিস দেওয়া হয়। ঢাকা শহরে ২৪/৭ জরুরি সেবা প্রদানকারী একটি নির্ভরযোগ্য প্রতিষ্ঠান। ঢাকা শহরের যেকোনো স্থান থেকে হাসপাতাল বা বাড়িতে রোগী বা মৃতদেহ পরিবহনের জন্য শিকদার অ্যাম্বুলেন্স সার্ভিসের উপর সম্পূর্ণ নির্ভর করা যায়। আমাদের লক্ষ্য হলো দ্রুত, নিরাপদ ও মানসম্পন্ন অ্যাম্বুলেন্স সেবা নিশ্চিত করা। </p>
             </div>
 
             {/* Emergency Contact */}
@@ -36,7 +31,7 @@ export function HeroSection() {
                   className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: 017100-60020
+                  কল করুনঃ 017100-60020
                 </Button>
               </Link>
               <Link href={"/contact-us"}>
@@ -45,7 +40,7 @@ export function HeroSection() {
                   size="lg"
                   className="px-8 py-4 text-lg bg-transparent"
                 >
-                  Online Booking Now
+                  অনলাইনে বুকিং করুন
                 </Button>
               </Link>
             </div>
@@ -57,9 +52,9 @@ export function HeroSection() {
                   <Clock className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold">10 Min Response</p>
+                  <p className="font-semibold">১৫ মিনিটে সার্ভিস</p>
                   <p className="text-sm text-muted-foreground">
-                    Average arrival time
+                    ঢাকা সিটির যেকোন এলাকায়
                   </p>
                 </div>
               </div>
@@ -68,9 +63,9 @@ export function HeroSection() {
                   <MapPin className="h-5 w-5 text-green-600" />
                 </div>
                 <div>
-                  <p className="font-semibold">GPS Tracking</p>
+                  <p className="font-semibold">জিপিএস ট্রাকিং</p>
                   <p className="text-sm text-muted-foreground">
-                    Real-time Location
+                    রিয়েল-টাইম লোকেশন
                   </p>
                 </div>
               </div>
@@ -79,8 +74,8 @@ export function HeroSection() {
                   <Phone className="h-5 w-5 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-semibold">24/7 Available</p>
-                  <p className="text-sm text-muted-foreground">Always ready</p>
+                  <p className="font-semibold">২৪/৭ জরুরী সার্ভিস</p>
+                  <p className="text-sm text-muted-foreground">যেকোন সময়, যেকোন এলাকায়</p>
                 </div>
               </div>
             </div>
@@ -104,7 +99,7 @@ export function HeroSection() {
                   <Phone className="h-6 w-6 text-red-600" />
                 </div>
                 <div>
-                  <p className="font-semibold">Emergency Hotline</p>
+                  <p className="font-semibold">ইমার্জেন্সি হেল্পলাইন</p>
                   <p className="text-2xl font-bold text-red-600">01710060020</p>
                 </div>
               </div>

@@ -17,19 +17,19 @@ import {
 import Link from "next/link";
 const quickLinks = [
   {
-    label: "Ac Ambulance Service",
+    label: "এসি অ্যাম্বুলেন্স সার্ভিস",
     link: "/ac-ambulance-service",
   },
   {
-    label: "Non Ac Ambulance Service",
+    label: "নন-এসি অ্যাম্বুলেন্স সার্ভিস",
     link: "/non-ac-ambulance",
   },
   {
-    label: "Freezing Ambulance Service",
+    label: "লাশবাহী ফ্রিজার অ্যাম্বুলেন্স সার্ভিস",
     link: "/freezing-ambulance-service",
   },
   {
-    label: "ICU Ambulance Service",
+    label: "লাইফ সাপোর্ট অ্যাম্বুলেন্স সার্ভিস ঢাকা",
     link: "/icu-ambulance-service",
   },
 ];
@@ -47,16 +47,14 @@ const FooterComponent = () => {
                 <Ambulance className="h-7 w-7 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Shikder Ambulance</h3>
+                <h3 className="text-xl font-bold">শিকদার অ্যাম্বুলেন্স সার্ভিস</h3>
                 <p className="text-gray-400 text-sm">
-                  Patient Transport Service
+                  রোগী ও লাশ পরিবহন সার্ভিস
                 </p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Shikder Ambulance company is the largest and trusted company in
-              Bangladesh. We offering you to provide the all types of
-              Ambulances. Quality Ambulance is available in Comfortable Price.
+              শিকদার অ্যাম্বুলেন্স কোম্পানি বাংলাদেশের সবচেয়ে বৃহত্তম ও বিশ্বাস্থ প্রতিষ্ঠান। ঢাকা সহ সকল জেলায় সব ধরনের অ্যাম্বুলেন্স সেবা প্রদান করে থাকি। ২৪/৭ ঘন্টা জরুরি সেবা।
             </p>
             <div className="flex space-x-4">
               <Button
@@ -92,7 +90,7 @@ const FooterComponent = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6">কুইক লিংকস</h4>
             <ul className="space-y-3">
               {quickLinks?.map((link) => (
                 <li key={link?.label}>
@@ -109,23 +107,23 @@ const FooterComponent = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Our Services</h4>
+            <h4 className="text-lg font-semibold mb-6">আমাদের সার্ভিস সমূহ</h4>
             <ul className="space-y-3">
               <li className="flex items-center text-gray-300">
                 <Heart className="h-4 w-4 mr-2 text-red-400" />
-                Always, Fast, and Reliable
+                দ্রুত, নিরাপদ ও আরামধায়ক সেবা।
               </li>
               <li className="flex items-center text-gray-300">
                 <Shield className="h-4 w-4 mr-2 text-blue-400" />
-                Emergency Ambulance Services
+                যেকোন সময়, যেকোন এলাকায়।
               </li>
               <li className="flex items-center text-gray-300">
                 <Ambulance className="h-4 w-4 mr-2 text-purple-400" />
-                Dhaka to all districts Ambulance
+                ঢাকা সিটিতে ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস
               </li>
               <li className="flex items-center text-gray-300">
                 <Ambulance className="h-4 w-4 mr-2 text-green-400" />
-                Any districts to Dhaka Ambulance Service
+                ঢাকা হতে সকল জেলায় অ্যাম্বুলেন্স সার্ভিস
               </li>
 
             </ul>
@@ -133,7 +131,7 @@ const FooterComponent = () => {
 
           {/* Contact & Newsletter */}
           <div>
-            <h4 className="text-lg font-semibold mb-6">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-6">যোগাযোগ করুন</h4>
             <div className="space-y-4 mb-6">
               <Link href={'tel:01710060020'}>
                 <div className="flex items-center text-gray-300">
@@ -151,7 +149,7 @@ const FooterComponent = () => {
               <div className="flex items-start text-gray-300">
                 <MapPin className="h-5 w-5 mr-3 mt-1 text-green-400" />
                 <div>
-                  <p>Eskaton Road, Mogbazar, Dhaka-1217</p>
+                  <p>মগবাজার হাসপাতাল রোড, ঢাকা-১২১৭</p>
                 </div>
               </div>
 
@@ -164,7 +162,7 @@ const FooterComponent = () => {
               <div className="flex items-start text-gray-300">
                 <Banknote className="h-5 w-5 mr-3 mt-1 text-purple-400" />
                 <Link href="/payments" target="_blank">
-                  <p>Payment System</p>
+                  <p>পেমেন্ট সিস্টেম</p>
                 </Link>
               </div>
 
@@ -215,7 +213,7 @@ const FooterComponent = () => {
           <div className="flex items-center justify-center space-x-4 text-center">
             <Phone className="h-5 w-5" />
             <p className="font-normal">
-              Need Emergency Ambulance? Call Now.
+              জরুরি অ্যাম্বুলেন্সের প্রয়োজন? এখনই কল করুন।
             </p>
           </div>
         </div>
