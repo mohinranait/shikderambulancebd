@@ -110,3 +110,5 @@ export const getSinglePostBySlugForDetailsPage = async (slug: string) => {
   });
   return await res.json();
 };
+
+// Change
