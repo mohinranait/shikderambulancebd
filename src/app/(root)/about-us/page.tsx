@@ -1,40 +1,40 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Heart, Clock, Award, Shield } from "lucide-react";
+import { Heart, Clock, Award, Shield, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function AboutPage() {
   const stats = [
-    { number: "10+", label: "Years of Service" },
-    { number: "50,000+", label: "Lives Saved" },
-    { number: "24/7", label: "Emergency Response" },
-    { number: "98%", label: "Response Rate" },
+    { number: "১০+", label: "সেবার বছর" },
+    { number: "৫০,০০০+", label: "সংরক্ষিত জীবন" },
+    { number: "২৪/৭", label: "জরুরি সেবা" },
+    { number: "৯৮%", label: "প্রতিক্রিয়া হার" },
   ];
 
   const team = [
     {
-      name: "Shahadat Shikder",
+      name: "শাহাদাত শিকদার",
       role: "Director",
       experience: "10 years",
       image: "/default.png?height=300&width=300",
       specialization: "Customer Support: 24/7",
     },
     {
-      name: "Musa Shikder Mahir",
+      name: "মাহির শিকদার মুছা",
       role: "Director",
       experience: "10 years",
       image: "/default.png?height=300&width=300",
       specialization: "Software Engineer",
     },
     {
-      name: "Mohin Rana",
+      name: "ইব্রাহীম",
       role: "Developer",
       experience: "10 years",
       image: "/default.png?height=300&width=300",
       specialization: "Software Developer",
     },
     {
-      name: "Kamrul Islam",
+      name: "কামরুল ইসলাম",
       role: "Manager",
       experience: "8 years",
       image: "/default.png?height=300&width=300",
@@ -45,27 +45,27 @@ export default function AboutPage() {
   const values = [
     {
       icon: Heart,
-      title: "Compassionate Care",
+      title: "দ্রুত রেসপন্স, ২৪/৭ সাপোর্ট",
       description:
-        "We treat every patient with dignity, respect, and the highest level of patient care.",
+        "জরুরি পরিস্থিতিতে প্রতিটি সেকেন্ড মূল্যবান। তাই আমরা ২৪/৭ প্রস্তুত থাকি দ্রুত রেসপন্স নিশ্চিত করতে, যাতে রোগী বা মৃতদেহ পরিবহনে কোনো দেরি না হয়।",
     },
     {
       icon: Clock,
-      title: "Fast Response",
+      title: "নির্ভরযোগ্যতা ও বিশ্বাস",
       description:
-        "Every second counts in emergencies. We pride ourselves on our quick response times.",
+        "সেবা প্রদান থেকে সময়মতো পৌঁছানো—সব জায়গায় আমরা বিশ্বাসযোগ্যতা বজায় রাখি।",
     },
     {
       icon: Shield,
-      title: "Safety First",
+      title: "সাশ্রয়ী ও স্বচ্ছ মূল্য",
       description:
-        "Patient safety is our top priority in every emergency situation.",
+        "কোনো লুকানো চার্জ নেই—ন্যায্য ও স্বচ্ছ মূল্যনীতি অনুসরণ করি।",
     },
     {
       icon: Award,
-      title: "Excellence",
+      title: "নির্ভরযোগ্যতা ও বিশ্বাস",
       description:
-        "We maintain the highest standards of Ambulance and professional service.",
+        "সেবা প্রদান থেকে সময়মতো পৌঁছানো—সব জায়গায় আমরা বিশ্বাসযোগ্যতা বজায় রাখি।",
     },
   ];
 
@@ -76,20 +76,16 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">
-              About Shikder Ambulance
+              About us
             </Badge>
-            <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-6">
-              Dedicated to Saving Lives with
+            <h1 className="text-3xl sm:text-5xl font-bold text-slate-800 mb-6">
+              শিকদার অ্যাম্বুলেন্স সার্ভিস,
               <span className="text-blue-600 block">
-                Emergency Ambulance Care
+                আপনার বিশ্বস্ত জরুরি সেবার সঙ্গী
               </span>
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              At Shikder Ambulance, we stand by your side with fast,
-              professional, and compassionate ambulance care—because saving
-              lives is more than our duty, it is our promise. Whether it is an
-              emergency or planned patient transfer, we’re ready 24/7 to help
-              across Dhaka.
+              শিকদার অ্যাম্বুলেন্স সার্ভিস হলো ঢাকার অন্যতম বিশ্বস্ত ও দ্রুতগতির জরুরি মেডিকেল ট্রান্সপোর্ট সার্ভিস। আমরা ২৪/৭ নিরবচ্ছিন্নভাবে সারা ঢাকা ও আশপাশের এলাকায় রোগী পরিবহন, লাইফ সাপোর্ট ও ফ্রিজিং অ্যাম্বুলেন্স সেবা প্রদান করে থাকি। জরুরি মুহূর্তে দ্রুত সঠিক সেবা পৌঁছে দেওয়াই আমাদের প্রধান দায়িত্ব।
             </p>
           </div>
         </div>
@@ -117,30 +113,17 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">
-                Our Story
+                শিকদার অ্যাম্বুলেন্স সার্ভিস
               </h2>
               <div className="space-y-6 text-slate-600 leading-relaxed">
                 <p>
-                  At Shikder Ambulance, we started our journey back in 2015 with
-                  one simple but powerful mission: to bring fast, reliable, and
-                  truly caring emergency ambulance services to the people of
-                  Dhaka. What began as a small team determined to make a
-                  difference has grown into one of the most trusted ambulance
-                  services in Dhaka city.
+                  শিকদার অ্যাম্বুলেন্স সার্ভিস হলো ঢাকার অন্যতম বিশ্বস্ত ও দ্রুতগামী জরুরি মেডিকেল ট্রান্সপোর্ট সেবা। আমরা ২৪/৭ সময় রোগী পরিবহন, লাইফ সাপোর্ট, ICU/CCU, PICU/SICU ও ফ্রিজিং অ্যাম্বুলেন্সসহ সব ধরনের অ্যাম্বুলেন্স সুবিধা প্রদান করি।
                 </p>
                 <p>
-                  From day one, our goal was clear—when every second matters, we
-                  must be ready. That’s why we’ve invested in modern AC, non-AC,
-                  and life support ICU ambulances, along with GPS-enabled
-                  dispatch systems to make sure help gets to you faster,
-                  anytime, anywhere.
+                  অভিজ্ঞ প্যারামেডিক টিম, আধুনিক মেডিকেল ইকুইপমেন্ট, পরিষ্কার ও স্যানিটাইজড গাড়ি এবং দ্রুত রেসপন্স—এসব কিছুর সমন্বয়ে আমরা প্রতিটি রোগীর জন্য নিরাপদ ও পেশাদার সেবা নিশ্চিত করি।
                 </p>
                 <p>
-                  Today, Shikder Ambulance runs 24/7 with a caring team of
-                  trained drivers, paramedics, and staff who see this not just
-                  as a job—but as a responsibility to our community. Because in
-                  times of emergency, you need more than an ambulance; you need
-                  people who genuinely care.
+                  ঢাকা শহরের যেকোনো এলাকা, হাসপাতাল বা বাসায় দ্রুত পৌঁছে রোগীকে সর্বোচ্চ সতর্কতার সাথে হাসপাতালে পৌঁছে দেওয়া আমাদের প্রধান দায়িত্ব। সাশ্রয়ী চার্জ, স্বচ্ছ সেবা এবং মানবিক আচরণই আমাদের বিশেষতা।
                 </p>
               </div>
             </div>
@@ -158,17 +141,156 @@ export default function AboutPage() {
         </div>
       </section>
 
+            {/* মিশন ও ভিশন */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              আমাদের মিশন ও ভিশন
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              দ্রুত, নিরাপদ ও উন্নত লাইফ সাপোর্টসহ জরুরি মেডিকেল ট্রান্সপোর্ট প্রদান করা এবং সারাদেশে আধুনিক, প্রযুক্তিনির্ভর, নির্ভরযোগ্য অ্যাম্বুলেন্স সেবা নেটওয়ার্ক গড়ে তোলাই আমাদের মূল মিশন ও ভিশন। 
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">
+                আমাদের মিশন
+              </h2>
+              <p className="font-semibold text-slate-600 max-w-3xl mx-auto mb-4">
+              আমাদের মিশন হলো—
+            </p>
+              <div className="space-y-6 text-slate-600 leading-relaxed">
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">রোগীর কাছে দ্রুত পৌঁছানো ও সেবা দেওয়া।</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">নিরাপদ ও পেশাদার মেডিকেল সাপোর্ট নিশ্চিত করা</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">সাশ্রয়ী চার্জে আন্তর্জাতিক মানের অ্যাম্বুলেন্স সেবা প্রদান করা</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">প্রতিটি রোগীকে সর্বোচ্চ গুরুত্ব ও মানবিক সহায়তা দেওয়া</span>
+                </div>                
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">
+                আমাদের ভিশন
+              </h2>
+              <p className="font-semibold text-slate-600 max-w-3xl mx-auto mb-4">
+              আমরা ভবিষ্যতে দেশজুড়ে একটি শক্তিশালী ও প্রযুক্তি-সমৃদ্ধ অ্যাম্বুলেন্স নেটওয়ার্ক গড়ে তুলতে চাই।
+            </p>
+              <div className="space-y-6 text-slate-600 leading-relaxed">
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">উন্নত লাইফ সাপোর্ট সুবিধা বৃদ্ধি</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">বড় পরিসরে ও দ্রুততম জরুরি সার্ভিস।</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">ডিজিটাল বুকিং ও ট্র্যাকিং সিস্টেম</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">রোগী সেবা মান আরও উন্নত করা</span>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                  {/* আমাদের সেবা সমূহ*/}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+           <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
+              শিকদার অ্যাম্বুলেন্স সার্বিস সমূহ
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              দ্রুত, নিরাপদ ও নির্ভরযোগ্য অ্যাম্বুলেন্স সেবা দেওয়াই আমাদের একমাত্র লক্ষ্য ও উদ্দেশ্য।
+            </p>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">
+                আমাদের সার্ভিস
+              </h2>
+              <div className="space-y-6 text-slate-600 leading-relaxed">
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">বেসিক অ্যাম্বুলেন্স সার্ভিস</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">এসি, নন-এসি অ্যাম্বুলেন্স সার্ভিস</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">ফ্রিজিং অ্যাম্বুলেন্স সার্ভিস (মরদেহ পরিবহন)</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">ICU, CCU, NICU, PICU অ্যাম্বুলেন্স সার্ভিস</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">লং রুট অ্যাম্বুলেন্স সার্ভিস (ঢাকা থেকে যেকোনো জেলা)</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">ঢাকা এয়ারপোর্ট অ্যাম্বুলেন্স সাপোর্ট</span>
+                </div>                  
+              </div>
+            </div>
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-6">
+                কেন আমাদের সার্বিস বেছে নেবেন?
+              </h2>
+              <div className="space-y-6 text-slate-600 leading-relaxed">
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">দ্রুততম রেসপন্স টাইম</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">ঢাকার সর্বত্র সার্ভিস কাভারেজ</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">সার্বক্ষণিক (২৪/৭) প্রস্তুত থাকা</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">সাশ্রয়ী ও স্বচ্ছ চার্জ</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                    <CheckCircle className="h-5 w-5 text-green-600" />
+                    <span className="text-gray-700">রোগীকে পরিবারের সদস্যের মতো যত্ন </span>
+                </div>                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Values */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">
-              Our Core Values
+              আমাদের মূল মূল্যবোধ
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Your safety, comfort, and peace of mind mean everything to us. We
-              are here 24/7 with fast, reliable, and caring ambulance service,
-              because: Your safety and comfort are our top priorities.
+              দ্রুত সাড়া, নিরাপত্তা, পেশাদারিত্ব, মানবিক আচরণ, আধুনিক লাইফ সাপোর্ট সুবিধা, স্বচ্ছ মূল্যনীতি এবং ২৪/৭ নির্ভরযোগ্য সেবা—এসবই আমাদের মূল মূল্যবোধ।
             </p>
           </div>
 
