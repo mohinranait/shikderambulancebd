@@ -14,20 +14,21 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Affordable Non-AC Ambulance Service in Bangladesh | Shikder Ambulance",
+    "নন-এসি অ্যাম্বুলেন্স সার্ভিস, ২৪/৭ দ্রুত রোগী পরিবহন সেবা",
   description:
-    "Affordable Non-AC ambulance Service in Bangladesh. We provide different types of Ambulance service in all districts of Bangladesh. We Are Just A Call Away",
+    "ঢাকা এরিয়া জুড়ে সাশ্রয়ী মূল্যে নন-এসি অ্যাম্বুলেন্স সার্ভিস। অভিজ্ঞ প্যারামেডিক স্টাফ ও জরুরি সরঞ্জাম সহ দ্রুত ও নিরাপদ রোগী পরিবহন নিশ্চিত।",
   keywords:
-    "non-AC ambulance, basic ambulance service, affordable ambulance Bangladesh, emergency medical transport, patient transport Dhaka, cheap ambulance service, basic life support ambulance, near ambulance, top ambulance, fast ambulance",
+    "ঢাকা নন-এসি অ্যাম্বুলেন্স সার্ভিস, জরুরি রোগী পরিবহন, সাশ্রয়ী মূল্যে অ্যাম্বুলেন্স, ২৪/৭ অ্যাম্বুলেন্স সার্ভিস, নন-এসি অ্যাম্বুলেন্স সার্ভিস, non-AC ambulance, basic ambulance service, patient transport Dhaka, cheap ambulance service, near ambulance, fast ambulance",
   authors: [{ name: "Shikder Ambulance" }],
   openGraph: {
     title:
-      "Affordable Non-AC Ambulance Service in Bangladesh | Shikder Ambulance",
+      "নন-এসি অ্যাম্বুলেন্স সার্ভিস, ২৪/৭ দ্রুত রোগী পরিবহন সেবা",
     description:
-      "Affordable Non-AC ambulance Service in Bangladesh. We provide different types of Ambulance service in all districts of Bangladesh. We Are Just A Call Away",
+      "ঢাকা এরিয়া জুড়ে সাশ্রয়ী মূল্যে নন-এসি অ্যাম্বুলেন্স সার্ভিস। অভিজ্ঞ প্যারামেডিক স্টাফ ও জরুরি সরঞ্জাম সহ দ্রুত ও নিরাপদ রোগী পরিবহন নিশ্চিত।",
     url: "https://shikderambulance.com/non-ac-ambulance",
     siteName: "Shikder Ambulance",
     images: [
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Non-AC Ambulance Service in Bangladesh | Shikder Ambulance",
+    title: "নন-এসি অ্যাম্বুলেন্স সার্ভিস",
     description:
-      "Affordable 24/7 Non-AC ambulance service with basic life support across Bangladesh.",
+      "ঢাকা এরিয়া জুড়ে সাশ্রয়ী মূল্যে নন-এসি অ্যাম্বুলেন্স সার্ভিস। অভিজ্ঞ প্যারামেডিক স্টাফ ও জরুরি সরঞ্জাম সহ দ্রুত ও নিরাপদ রোগী পরিবহন নিশ্চিত।",
     images: ["/images/Non-Ac-Ambulance Service.jpg"],
   },
   robots: {
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://shikderambulance.com/non-ac-ambulance",
+    canonical: "https://shikderambulance.com.bd/non-ac-ambulance",
   },
 };
 
@@ -74,16 +75,14 @@ export default function NonAcAmbulancePage() {
             <div className="space-y-4">
               <Badge className="bg-green-100 text-green-800 hover:bg-green-100">
                 <DollarSign className="h-3 w-3 mr-1" />
-                Affordable Emergency Transport
+                ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Non-Ac Ambulance service in{" "}
-                <span className="text-blue-600">Bangladesh</span>
+                জরুরি নন-এসি অ্যাম্বুলেন্স সার্ভিস {" "}
+                <span className="text-blue-600">২৪/৭ দ্রুত রোগী পরিবহন</span>
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                Non-Ac Ambulance service in Dhaka, Bangladesh. We provide
-                different types of Ambulance service in all districts of
-                Bangladesh. We Are Just A Call Away.
+                ঢাকা এলাকায় জরুরি রোগী পরিবহনের জন্য নন-এসি অ্যাম্বুলেন্স সার্ভিস একটি নির্ভরযোগ্য ও সাশ্রয়ী সমাধান। শিকদার অ্যাম্বুলেন্স সার্ভিসে দক্ষ ড্রাইভার মাধ্যমে রোগীর নিরাপদ ও আরামদায়ক পরিবহন নিশ্চিত করা হয়। আমাদের নন-এসি অ্যাম্বুলেন্স ২৪/৭ উপলব্ধ এবং ঢাকা শহরের যেকোনো জায়গায় দ্রুত পৌঁছানো সম্ভব, যা জরুরি পরিস্থিতিতে রোগীর জীবন রক্ষায় অত্যন্ত গুরুত্বপূর্ণ। যেকোন সময় গাড়ি বুকিং করতে কল করুন, ০১৭১০০৬০০২০
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -92,7 +91,7 @@ export default function NonAcAmbulancePage() {
                 className="bg-blue-600 hover:bg-blue-700 text-white"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Contact Now
+                কল দিন, ২৪/৭ সাপোর্ট 
               </Button>
             </div>
           </div>
@@ -104,80 +103,60 @@ export default function NonAcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Emergency Non-Ac Ambulance Service in Bangladesh
+              ইমার্জেন্সি নন-এসি অ্যাম্বুলেন্স সার্ভিস, রোগী ও লাশ পরিবহন সার্ভিস
             </h2>
             <p className="text-lg text-gray-600">
-              Cost-effective emergency medical transport for everyone
+              ঢাকা হতে সকল জেলায় রোগী ও লাশ পরিবহনে নন-এসি এ্যাম্বুলেন্স সার্ভিস দেওয়া হয়। সুলভ ভাড়ায় এ্যাম্বুলেন্স সার্বিস বুকিং করতেে এখনই কল করুনঃ ০১৭১০০-৬০০২০
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">
-                Non-Ac Ambulance Service
+                নন-এসি অ্যাম্বুলেন্স সার্ভিস
               </h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Non-Ac ambulance service is for those who cannot afford the
-                  cost of an Ac ambulance. Though it does not cost you as Ac
-                  ambulance service, it serves you with everything except the
-                  facility of AC. Like Ac ambulance service, you will get all
-                  the important equipment such as wheelchairs, stretchers,
-                  oxygen cylinders etc. Also, our team members are highly
-                  trained. You can rely on us for any type of ambulance service
-                  Our Ac ambulance is 24/7 open for you. Call at our emergency
-                  number, we will be there for you.
+                  নন-এসি অ্যাম্বুলেন্স সার্ভিস হলো এমন একটি পরিবহন সেবা যেখানে গাড়িতে এয়ার কন্ডিশনিং সুবিধা নেই। এটি সাধারণ রোগী পরিবহন, হাসপাতাল থেকে বাসা বা অন্য হাসপাতালে রোগী স্থানান্তরের জন্য ব্যবহার করা হয়।
                 </p>
                 <p>
-                  The Non-Ac ambulance service is simple and Normal. This rent
-                  is low of others ambulance, so it is very comfortable for all
-                  people. Non-Ac ambulance mainly provide for people and who
-                  wants to rent it. 24 hours ambulance available in Dhaka. You
-                  will be satisfied with all our arrangements. Our ambulances
-                  are full-furnished with all the necessary equipment such as
-                  stretchers, wheelchair, oxygen cylinders etc. Our ambulances
-                  are clean bed for the patients and comfortable seats for their
-                  companions. We ensure our valuable customers, all sort of
-                  hospital medical care.
+                  নন-এসি অ্যাম্বুলেন্সে অভিজ্ঞ প্যারামেডিক স্টাফ থাকে এবং প্রয়োজনীয় চিকিৎসা সরঞ্জাম যেমন অক্সিজেন ও মনিটরিং সিস্টেম রাখা হয়। রোগীর যাত্রা নিরাপদ, সাশ্রয়ী এবং আরামদায়ক করার জন্য এটি কার্যকর।
                 </p>
                 <p>
-                  The ambulance service 24/7 Hours available in Dhaka city with
-                  all Zila sadar. We provide different types ambulance all
-                  districts of Bangladesh. We are always ready to provide
-                  emergency ambulance service for any patients.
+                  নন-এসি অ্যাম্বুলেন্স সার্ভিস সাশ্রয়ী মূল্যে রোগী পরিবহন নিশ্চিত করে। ঢাকা শহরের যেকোনো এলাকায় দ্রুত পৌঁছানোর সুবিধা প্রদান করে এবং জরুরি পরিস্থিতিতে রোগীর জীবন রক্ষায় গুরুত্বপূর্ণ ভূমিকা পালন করে। এতে অভিজ্ঞ প্যারামেডিক স্টাফ, অক্সিজেন এবং মনিটরিং সিস্টেমসহ প্রয়োজনীয় চিকিৎসা সরঞ্জাম থাকে। রোগীর যাত্রা নিরাপদ ও আরামদায়ক হওয়ায় দীর্ঘ দূরত্বেও ক্লান্তি কম থাকে। হাসপাতাল থেকে বাসা বা অন্য হাসপাতালে রোগী স্থানান্তরের সময় নন-এসি অ্যাম্বুলেন্স সেবা একটি নির্ভরযোগ্য এবং মানসম্মত সমাধান হিসেবে কাজ করে।
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold text-gray-900">
-                  Key Features
+                  গুরুত্বপূর্ণ বৈশিষ্ট্য
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-gray-700">24/7 Available</span>
+                    <span className="text-gray-700">সাশ্রয়ী মূল্য</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-gray-700">Cost-Effective</span>
+                    <span className="text-gray-700">দ্রুত রেসপন্স</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-gray-700">Quick Online Booking</span>
+                    <span className="text-gray-700">নিরাপদ পরিবহন</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-gray-700">Trained Staff</span>
+                    <span className="text-gray-700">নিরাপদ ও আরামদায়ক যাত্রার নিশ্চয়তা</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      All Districts Coverage
+                      ঢাকা শহর ও দূরবর্তী এলাকায় দ্রুত পৌঁছানোর সক্ষমতা
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-gray-700">Essential Equipment</span>
+                    <span className="text-gray-700">জরুরি অবস্থায় তাৎক্ষণিক সাপোর্ট</span>
                   </div>
                 </div>
               </div>
@@ -203,24 +182,17 @@ export default function NonAcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Emergency Non-Ac Ambulance in Dhaka
+              কম খরচে নির্ভরযোগ্য নন-এসি অ্যাম্বুলেন্স সার্ভিস
             </h2>
             <p className="text-lg text-gray-600">
-              Immediate response for medical emergencies
+              দ্রুত রেসপন্স, ২৪/৭ নন-এসি অ্যাম্বুলেন্স সার্ভিস ঢাকা
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="bg-blue-50 p-8 rounded-2xl">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Emergency Ac Ambulance service is available in Dhaka City. This
-                ambulance company provide Emergency ambulance service 24 hours
-                in a day, 7 Days a week, and 365 days a year. The Emergency
-                ambulance in cheap rent of ambulance services. We provide always
-                a Standard ambulance with the proper requirements. Contact us to
-                Get an Emergency ambulance service anywhere in Bangladesh. Fast
-                ambulance service provider Company in Dhaka City. If you need an
-                emergency ambulance than contact us.
+                জরুরি রোগী পরিবহনে নন-এসি অ্যাম্বুলেন্সের গুরুত্ব বলতে বোঝায়—সাশ্রয়ী খরচে দ্রুত ও নির্ভরযোগ্যভাবে রোগীকে হাসপাতাল বা চিকিৎসা কেন্দ্রে পৌঁছে দেওয়ার সক্ষমতা। নন-এসি অ্যাম্বুলেন্সের ভাড়া কম হওয়ায় সাধারণ মানুষের জন্য এটি সহজলভ্য। এতে প্রয়োজনীয় চিকিৎসা সরঞ্জাম, অক্সিজেন সাপোর্ট এবং প্রশিক্ষিত স্টাফ থাকে, যা জরুরি মুহূর্তে রোগীর জীবন রক্ষায় সহায়ক ভূমিকা পালন করে। শহরের ভিড়, ট্রাফিক বা দূরবর্তী এলাকায় দ্রুত পৌঁছাতে নন-এসি অ্যাম্বুলেন্স কার্যকর ও দক্ষ একটি পরিবহন ব্যবস্থা হিসেবে বিবেচিত হয়।
               </p>
             </div>
           </div>
@@ -233,14 +205,14 @@ export default function NonAcAmbulancePage() {
           <div className="grid lg:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Find Non-Ac Ambulance
+                Non-Ac Ambulance Service in Dhaka
               </h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  Emergency Ac Ambulance service is available in Dhaka City.
-                  This ambulance company provide Emergency ambulance service 24
+                  Emergency Non-Ac Ambulance service is available in Dhaka City.
+                  This ambulance company provide Emergency Non-Ac ambulance service 24
                   hours in a day, 7 Days a week, and 365 days a year. The
-                  Emergency ambulance in cheap rent of ambulance services. We
+                  Emergency Ambulance in cheap rent of ambulance. We
                   provide always a Standard ambulance with the proper
                   requirements. Contact us to Get an Emergency ambulance service
                   anywhere in Bangladesh. Fast ambulance service provider
@@ -248,7 +220,7 @@ export default function NonAcAmbulancePage() {
                   contact us.
                 </p>
                 <p>
-                  Online Ambulance service, Non-Ac Ambulance service, Ac
+                  Online Ambulance service in Dhaka. The best Non-Ac Ambulance service, Ac
                   Ambulance service. The best Ambulance services in Dhaka city,
                   Normal ambulance service, Dhaka Ambulance service, Quality
                   Ambulance service, Dhaka city Ambulance service.
@@ -258,7 +230,7 @@ export default function NonAcAmbulancePage() {
 
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Find Ambulance Near Area you
+                Ambulance Service Near me
               </h3>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
@@ -288,10 +260,10 @@ export default function NonAcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Overview of Non-Ac Ambulance
+              নন-এসি অ্যাম্বুলেন্সের সারসংক্ষেপ
             </h2>
             <p className="text-lg text-gray-600">
-              Understanding the benefits and features
+              জরুরী রোগী পরিবহনে যেকোন সময়, যেকোন এলাকায় দ্রুত নন-এসি এ্যাম্বুলেন্স সার্ভিস পাওয়া যায়।
             </p>
           </div>
 
@@ -301,10 +273,10 @@ export default function NonAcAmbulancePage() {
                 <Users className="h-8 w-8 text-blue-600" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">
-                Patient Comfort
+                পেশেন্ট কেয়ার
               </h4>
               <p className="text-sm text-gray-600">
-                Enhances comfort during transport, especially long distances
+                পেশেন্ট কেয়ার বলতে রোগীর প্রতি যত্ন, সেবা ও সহায়তাকে বোঝায়। রোগীর শারীরিক, মানসিক ও মেডিকেল চাহিদা পূরণ করতে যে সব সেবা প্রদান করা হয়—তাই হলো পেশেন্ট কেয়ার।
               </p>
             </Card>
 
@@ -313,10 +285,10 @@ export default function NonAcAmbulancePage() {
                 <Shield className="h-8 w-8 text-green-600" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">
-                Temperature Control
+                তাপমাত্রা নিয়ন্ত্রণ
               </h4>
               <p className="text-sm text-gray-600">
-                Maintains a cool, stable environment for patient comfort
+                কোনো জায়গার ভেতরের তাপমাত্রা নির্দিষ্ট মাত্রায় রাখা, যাতে পরিবেশ আরামদায়ক, নিরাপদ ও উপযুক্ত থাকে। তবে নন-এসি অ্যাম্বুলেন্সে এসি থাকে না। রোগী পরিবহনে নন-এসি এ্যাম্বুলেন্সের তুলনায় এসি অ্যাম্বুলেন্স উত্তম।
               </p>
             </Card>
 
@@ -325,10 +297,10 @@ export default function NonAcAmbulancePage() {
                 <DollarSign className="h-8 w-8 text-orange-600" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">
-                Increased Cost
+                ভাড়ার পার্থক্যঃ
               </h4>
               <p className="text-sm text-gray-600">
-                Typically more expensive than non-AC ambulances
+                এসি অ্যাম্বুলেন্স সার্ভিস এতে এয়ার কন্ডিশনিং সুবিধা থাকায় ভাড়া তুলনামূলক বেশি হয়। আর নন-এসি অ্যাম্বুলেন্স সার্ভিস এতে এয়ার কন্ডিশনিং সুবিধা নেই, তাই ভাড়া তুলনামুলক কম হয়। বাজেট-ফ্রেন্ডলি এবং সাশ্রয়ী মূল্যে মানসম্মত পরিবহন নিশ্চিত করে।
               </p>
             </Card>
 
@@ -337,10 +309,10 @@ export default function NonAcAmbulancePage() {
                 <Stethoscope className="h-8 w-8 text-purple-600" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">
-                Medical Stability
+                চিকিৎসাগত স্থিতিশীলতাঃ 
               </h4>
               <p className="text-sm text-gray-600">
-                Helps regulate body temperature for certain medical conditions
+                রোগীর শারীরিক ও মানসিক অবস্থার এমন একটি অবস্থা যেখানে তার জীবন সংকটমুক্ত, শারীরিক সংকট বা গুরুতর রোগের ঝুঁকি কম এবং চিকিৎসা সাপোর্টে নিয়ন্ত্রণে থাকে।
               </p>
             </Card>
 
@@ -349,10 +321,10 @@ export default function NonAcAmbulancePage() {
                 <Clock className="h-8 w-8 text-red-600" />
               </div>
               <h4 className="font-semibold text-gray-900 mb-2">
-                Available 24/7
+                জরুরি সেবা ২৪/৭
               </h4>
               <p className="text-sm text-gray-600">
-                Anytime, Anywhere is Available in Bangladesh
+                শিকদার অ্যাম্বুলেন্স সার্ভিস ২৪/৭ সেবা প্রদানের মাধ্যমে রোগীর জীবন রক্ষা এবং নিরাপদ পরিবহন নিশ্চিত করে।
               </p>
             </Card>
           </div>
@@ -431,33 +403,33 @@ export default function NonAcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Service Coverage Areas
+              সেবা প্রদানের আওতাভুক্ত এলাকা
             </h2>
             <p className="text-xl opacity-90">
-              Non-AC ambulance Service is Available all Over Bangladesh
+              ঢাকা সহ বাংলাদেশের সকল জেলায় রোগী ও লাশ পরিবহনে নন-এসি এ্যাম্বুলেন্স সেবা দেওয়া হয়।
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div className="bg-white/10 rounded-lg p-6">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">Dhaka Division</h3>
-              <p className="text-sm opacity-80">All districts and upazilas</p>
+              <h3 className="font-semibold mb-2">ঢাকা</h3>
+              <p className="text-sm opacity-80">ঢাকা হতে সকল জেলায় অ্যাম্বুলেন্স সার্ভিস।</p>
             </div>
             <div className="bg-white/10 rounded-lg p-6">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">Chittagong Division</h3>
-              <p className="text-sm opacity-80">Major cities and towns</p>
+              <h3 className="font-semibold mb-2">বরিশাল</h3>
+              <p className="text-sm opacity-80">বরিশাল টু ঢাকা, এবং ঢাকা টু বরিশাল এরিয়া</p>
             </div>
             <div className="bg-white/10 rounded-lg p-6">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">Sylhet Division</h3>
-              <p className="text-sm opacity-80">Complete coverage</p>
+              <h3 className="font-semibold mb-2">চিটাগাং সদর</h3>
+              <p className="text-sm opacity-80">ঢাকা টু চিটাগাং সদর, এবং চিটাগাং টু ঢাকা জরুরি এ্যাম্বুলেন্স সেবা</p>
             </div>
             <div className="bg-white/10 rounded-lg p-6">
               <MapPin className="h-8 w-8 mx-auto mb-3" />
-              <h3 className="font-semibold mb-2">All Bangladesh</h3>
-              <p className="text-sm opacity-80">64 districts covered</p>
+              <h3 className="font-semibold mb-2">বাংলাদেশ</h3>
+              <p className="text-sm opacity-80">যেকোন সময়, যেকোন থানা ও জেলায় সার্ভিস</p>
             </div>
           </div>
         </div>
@@ -468,10 +440,10 @@ export default function NonAcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Affordable Pricing
+              সাশ্রয়ী মূল্যঃ
             </h2>
             <p className="text-lg text-gray-600">
-              Cost-effective emergency Patient transport for everyone
+              শিকদার অ্যাম্বুলেন্স সার্ভিসে রোগী পরিবহন সাশ্রয়ী মূল্যে করা হয়, দ্রুত, নিরাপদ ও মানসম্মত সেবা নিশ্চিত করে।
             </p>
           </div>
 
@@ -479,34 +451,34 @@ export default function NonAcAmbulancePage() {
             <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8 text-center">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-gray-900">
-                  Why Choose Non-AC Ambulance?
+                  কেন নন-এসি অ্যাম্বুলেন্স বেছে নেবেন?
                 </h3>
                 <div className="grid md:grid-cols-3 gap-6 mt-8">
                   <div className="text-center">
                     <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                       <DollarSign className="h-8 w-8 text-green-600" />
                     </div>
-                    <h4 className="font-semibold mb-2">Cost-Effective</h4>
+                    <h4 className="font-semibold mb-2">বাজেট-ফ্রেন্ডলি</h4>
                     <p className="text-gray-600 text-sm">
-                      Affordable rates for basic emergency transport
+                      অ্যাম্বুলেন্স সার্ভিসে এটি রোগী পরিবহনকে সাশ্রয়ী মূল্যে নিরাপদ এবং কার্যকরী করে তোলে।
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Heart className="h-8 w-8 text-blue-600" />
+                      <Heart className="h-8 w-8 text-blue-600"/>
                     </div>
-                    <h4 className="font-semibold mb-2">Essential Care</h4>
+                    <h4 className="font-semibold mb-2">জরুরি সেবা</h4>
                     <p className="text-gray-600 text-sm">
-                      All necessary medical equipment included
+                      অ্যাম্বুলেন্সে এটি রোগীর নিরাপত্তা, জীবন রক্ষা এবং আরামদায়ক পরিবহন নিশ্চিত করে।
                     </p>
                   </div>
                   <div className="text-center">
                     <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Clock className="h-8 w-8 text-purple-600" />
+                      <Clock className="h-8 w-8 text-purple-600"/>
                     </div>
-                    <h4 className="font-semibold mb-2">Quick Response</h4>
+                    <h4 className="font-semibold mb-2">দ্রুত সাড়া</h4>
                     <p className="text-gray-600 text-sm">
-                      Fast emergency response across Bangladesh
+                      অ্যাম্বুলেন্স ক্ষেত্রে এটি রোগীর জীবন রক্ষায় অত্যন্ত গুরুত্বপূর্ণ, কারণ দ্রুত পৌঁছানো মানে সময়মতো চিকিৎসা শুরু।
                     </p>
                   </div>
                 </div>
@@ -527,21 +499,21 @@ export default function NonAcAmbulancePage() {
               Contact us now for cost-effective emergency patient transport
               service. Available 24/7 in the all districts of Bangladesh.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+           <div className="flex flex-col sm:flex-row gap-4 justify-center">              
+              <Link href={"tel:01627-669222"}> <Button
                 size="lg"
                 className="bg-white text-blue-600 hover:bg-gray-100"
               >
-                <Phone className="h-5 w-5 mr-2" />
-                Call: 01627-669222
-              </Button>
-              <Button
+                <Phone className="h-5 w-5 mr-2"/>
+                কল দিন: 01627-669222
+              </Button></Link>              
+              <Link href={"https://wa.me/01710060020"} ><Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
               >
                 WhatsApp: 017100-60020
-              </Button>
+              </Button> </Link>
             </div>
           </div>
         </div>

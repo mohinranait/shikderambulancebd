@@ -12,16 +12,14 @@ import {
 import ContactForm from "@/components/pages/contact/contact-form";
 
 export const metadata = {
-  title: "Contact Us: Shikder Ambulance Service",
+  title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ২৪/৭ জরুরি অ্যাম্বুলেন্স হেল্পলাইন",
   description:
-    "Shikder Ambulance Service in Bangladesh. We provide different types of Ambulances. The Largest and Trusted Ambulacne Company in Bangladesh. When you need Ambulance the Contact Us.",
+    "শিকদার অ্যাম্বুলেন্স সার্ভিসের সাথে যোগাযোগ করুন। ২৪/৭ দ্রুত রেসপন্স, ICU/CCU, লাইফ সাপোর্ট এবং ফ্রিজিং অ্যাম্বুলেন্স সার্ভিস পেতে কল করুন। নিরাপদ রোগী পরিবহন নিশ্চিত।",
   keywords: [
-    "Shikder Ambulance service",
-    "emergency ambulance",
-    "Dhaka ambulance",
+    "জরুরি অ্যাম্বুলেন্স কল, ২৪/৭ অ্যাম্বুলেন্স সার্ভিস, অ্যাম্বুলেন্স যোগাযোগ, শিকদার অ্যাম্বুলেন্স সার্ভিস, দ্রুত অ্যাম্বুলেন্স সার্ভিস ঢাকা, হাসপাতালে রোগী পরিবহন অ্যাম্বুলেন্স",
   ],
   openGraph: {
-    title: "Contact Us: Shikder Ambulance Service",
+    title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ২৪/৭ জরুরি অ্যাম্বুলেন্স হেল্পলাইন",
     description:
       "Shikder Ambulance Service in Bangladesh. We provide different types of Ambulances. The Largest and Trusted Ambulacne Company in Bangladesh. When you need Ambulance the Contact Us.",
     url: "https://shikderambulance.com",
@@ -72,22 +70,22 @@ export default function ContactPage() {
 
   const locations = [
     {
-      name: "Main Station",
+      name: "মগবাজার",
       phone: "01710060020",
-      hours: "24/7 Emergency Services",
-      address: "Holy Family Hospital, New Eskaton Road, Dhaka-1217",
+      hours: "২৪/৭, জরুরি সেবা",
+      address: "নিউ ইস্কাটন রোড, মগবাজার, ঢাকা-১২১৭",
     },
     {
-      name: "Mohakhali",
+      name: "মহাখালী",
       phone: "01627-669222",
-      hours: "Available: 24/7",
-      address: "Warless Road, Mohakhali, Dhaka-1230",
+      hours: "জরুরি সেবা ২৪/৭",
+      address: "ওয়ারলেস রোড, মহাখালী, ঢাকা-১২৩০",
     },
     {
-      name: "Jatrabari",
+      name: "যাত্রাবাড়ী",
       phone: "017100-60020",
-      hours: "24/7 Emergency Services",
-      address: "Jatrabari Chowrasta, Dhaka-1204",
+      hours: "২৪/৭ ইমার্জেন্সি সার্ভিস",
+      address: " যাত্রাবাড়ি ধলপুর, ঢাকা-১২০৪",
     },
   ];
 
@@ -101,13 +99,11 @@ export default function ContactPage() {
               Contact Us
             </Badge>
             <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 mb-6">
-              Get in Touch with
-              <span className="text-blue-600 block">Shikder Ambulance</span>
+              শিকদার অ্যাম্বুলেন্স সার্ভিস
+              <span className="text-blue-600 block">জরুরি অ্যাম্বুলেন্স সেবা ২৪/৭</span>
             </h1>
             <p className="sm:text-lg text-slate-600 leading-relaxed">
-              We're here to help 24/7. Whether it's an emergency or you need
-              information about our services, don't hesitate to reach out to our
-              professional team.
+              জরুরি মুহূর্তে দ্রুত ও নির্ভরযোগ্য অ্যাম্বুলেন্স সেবা প্রয়োজন হলে শিকদার অ্যাম্বুলেন্স সার্ভিস সবসময় প্রস্তুত। আমাদের ২৪/৭ হেল্পলাইন ও অভিজ্ঞ মেডিকেল টিম রোগীকে নিরাপদ, দ্রুত ও পেশাদারভাবে হাসপাতালে পৌঁছে দেয়। নিচের মাধ্যমগুলো ব্যবহার করে যেকোনো সময় আমাদের সাথে যোগাযোগ করুন।
             </p>
           </div>
         </div>
@@ -183,11 +179,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div>
             <h2 className="text-2xl font-bold text-center  text-slate-800 mb-1">
-              Our Locations
+              আমাদের অবস্থান সমূহ
             </h2>
             <p className="text-slate-600 text-center  mb-4">
-              We have multiple stations strategically located throughout the
-              city to ensure rapid response times.
+              ঢাকা শহরের বিভিন্ন এলাকা হতে ঢাকা সহ সকল জেলায় রোগী ও লাশ পরিবহনে ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস দেওয়া হয়। বাংলাদেশের যেকোন এলাকা হতে যেকোন সময় গাড়ি বুকিং করতে যোগাযোগ করুন।
             </p>
           </div>
 
@@ -198,11 +193,7 @@ export default function ContactPage() {
                   <h3 className="text-xl font-semibold text-slate-800 mb-4">
                     {location.name}
                   </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <p className="text-slate-600">{location.address}</p>
-                    </div>
+                  <div className="space-y-3">                    
                     <div className="flex items-center space-x-3">
                       <Phone className="h-5 w-5 text-blue-600" />
                       <p className="text-slate-600">{location.phone}</p>
@@ -210,6 +201,10 @@ export default function ContactPage() {
                     <div className="flex items-center space-x-3">
                       <Clock className="h-5 w-5 text-blue-600" />
                       <p className="text-slate-600">{location.hours}</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <MapPin className="h-5 w-5 text-blue-600 mt-0.5" />
+                      <p className="text-slate-600">{location.address}</p>
                     </div>
                   </div>
                 </CardContent>

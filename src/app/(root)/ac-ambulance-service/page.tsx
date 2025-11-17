@@ -12,26 +12,27 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best AC Ambulance Service in Dhaka | Shikder Ambulance 24/7",
+  title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ঢাকা এসি অ্যাম্বুলেন্স সার্ভিস ২৪/৭",
   description:
-    "Best AC Ambulance Service in Dhaka by Shikder Ambulance. Temperature-controlled ambulance with air conditioning for patient comfort. 24/7 Emergency Ambulance services across all districts.",
+    "ঢাকায় দ্রুত, নিরাপদ এবং সাশ্রয়ী মূল্যে এসি অ্যাম্বুলেন্স সার্ভিসের জন্য শিকদার অ্যাম্বুলেন্স সার্ভিসের সাথে যোগাযোগ করুন। ২৪/৭ জরুরি রোগী পরিবহন সেবা।",
   keywords:
     "AC ambulance, air conditioned ambulance, best Ambulance, top ambulance company, Dhaka city Ambulance, Near Ambulance, free Ambulance in Dhaka city. ambulance service Dhaka, emergency medical service, temperature controlled ambulance, patient transport Bangladesh",
   authors: [{ name: "Shikder Ambulance" }],
   openGraph: {
-    title: "Best AC Ambulance Service in Dhaka by Shikder Ambulance 24/7",
+    title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ঢাকা এসি অ্যাম্বুলেন্স সার্ভিস ২৪/৭",
     description:
       "Best AC Ambulance Service in Dhaka by Shikder Ambulance. Professional AC ambulance service with temperature control for patient comfort. Available 24/7 across Bangladesh.",
-    url: "https://shikderambulance.com/ac-ambulance-service",
+    url: "https://shikderambulance.com.bd/ac-ambulance-service",
     siteName: "Shikder Ambulance",
     images: [
       {
         url: "/images/Ac Ambulance Service -Shikder  Ambulance.jpg",
         width: 1200,
         height: 630,
-        alt: "Best AC Ambulance Service in Dhaka by Shikder Ambulance",
+        alt: "এসি অ্যাম্বুলেন্স সার্ভিস ২৪/৭",
       },
     ],
     locale: "en_US",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best AC Ambulance Service in Dhaka by Shikder Ambulance",
+    title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ঢাকা এসি অ্যাম্বুলেন্স সার্ভিস ২৪/৭",
     description:
       "Best AC Ambulance Service in Dhaka. Professional AC ambulance service with temperature control. Available 24/7.",
     images: ["/images/Ac Ambulance Service -Shikder  Ambulance.jpg"],
@@ -67,19 +68,17 @@ export default function AcAmbulancePage() {
             <div className="space-y-4">
               <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-100">
                 <Wind className="h-3 w-3 mr-1" />
-                The Best Quality Ambulance Service
+                এসি অ্যাম্বুলেন্স সার্ভিস
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Best Ac Ambulance Service in Dhaka{" "}
+                 এসি অ্যাম্বুলেন্স সার্ভিস ঢাকা, {" "} ২৪/৭ জরুরি সেবা
               </h1>
               <h2 className="text-3xl md:text-4xl font-bold">
-                <span className="text-pink-500">Fast and Reliable</span>{" "}
-                <span className="text-orange-500">24/7</span>
+                <span className="text-pink-500">দ্রুত, নিরাপদ, ও </span>{" "}
+                <span className="text-orange-500"> আরামদায়ক</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-                Best Ac Ambulance Service in Dhaka. We provide different types
-                of Ambulance in the all districts of Bangladesh. We Are Just A
-                Call Away. Contact Us Now
+                শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকায় ২৪/৭ এসি অ্যাম্বুলেন্স সার্ভিস প্রদান করছে। আমাদের লক্ষ্য হলো রোগীকে আরামদায়ক, নিরাপদ এবং দ্রুত পরিবহন নিশ্চিত করা। অভিজ্ঞ প্যারামেডিক স্টাফ ও আধুনিক চিকিৎসা সরঞ্জামসহ আমরা প্রতিটি জরুরি পরিস্থিতিতে আপনার পাশে থাকি।
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -88,7 +87,7 @@ export default function AcAmbulancePage() {
                 className="bg-blue-600 hover:bg-blue-700 text-white"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                Call Now
+                কল করুন
               </Button>
             </div>
           </div>
@@ -100,82 +99,76 @@ export default function AcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Ac Ambulance Service in Bangladesh
+              ঢাকায় ২৪/৭ এসি অ্যাম্বুলেন্স সার্ভিস – দ্রুত ও নিরাপদ রোগী পরিবহন
             </h2>
             <p className="text-center font-semibold">
-              24/7 availability – just a phone call away.
+              যেকোন সময়, যেকোন এলাকায় - একটি ফোন কলই যতেষ্ট।
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">
-                Ac Ambulance Services
+                এসি অ্যাম্বুলেন্স সার্ভিস
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                The Ac Ambulance is one of the{" "}
+                এসি অ্যাম্বুলেন্স সার্ভিস হলো এমন একটি অ্যাম্বুলেন্স সেবা যেখানে গাড়িতে এয়ার কন্ডিশনিং সুবিধা থাকে। এটি রোগীর জন্য যাত্রাপথকে আরামদায়ক করে তোলে, বিশেষ করে গরম আবহাওয়ায় বা দীর্ঘ পথের রোগী পরিবহনের সময়। এছাড়া এই ধরনের অ্যাম্বুলেন্সে সাধারণত লাইফ সাপোর্ট, অক্সিজেন এবং প্রয়োজনীয় চিকিৎসা সরঞ্জামও থাকে। আপনার প্রিয়জনের জীবন রক্ষা এবং আরামদায়ক পরিবহনের জন্য{" "} 
                 <a
                   href="https://shikderambulance.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  best ambulance
+                  অ্যাম্বুলেন্স সার্ভিস
                 </a>{" "}
-                services in Dhaka as well as in the whole Bangladesh. An Ac
-                ambulance is mainly used to transfer a patient to the hospital
-                or a recently recovered person to his/her resident. Ac
-                Ambulances have air conditioning systems.
+                হলো নির্ভরযোগ্য নাম শিকদার অ্যাম্বুলেন্স সার্ভিস।
               </p>
               <p className="text-gray-600 leading-relaxed">
-                As the temperature is very high in Bangladesh and we have to
-                wait hours after hours in traffic, it can make a normal person
-                fall sick. So it is crucial to maintain a suitable temperature
-                for any patient and the companions.
+                আমাদের অ্যাম্বুলেন্সগুলোতে রয়েছে প্রয়োজনীয় লাইফ সাপোর্ট সরঞ্জাম, অক্সিজেন সাপোর্ট এবং মনিটরিং সিস্টেম, যা গুরুতর রোগীর জন্য বিশেষভাবে প্রস্তুত। অভিজ্ঞ ও প্রশিক্ষিত প্যারামেডিক স্টাফ ২৪/৭ উপস্থিত থাকে রোগীর নিরাপত্তা এবং চিকিৎসা সহায়তা নিশ্চিত করার জন্য।
               </p>
 
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold text-gray-900">
-                  Facilities of Ac Ambulance
+                  এসি অ্যাম্বুলেন্স সার্ভিস ব্যবহারের সুবিধা
                 </h4>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
-                    <span className="text-gray-700">24/7 Customer Support</span>
+                    <span className="text-gray-700">রোগীর জন্য আরামদায়ক পরিবহন</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      Affortable, fast and reliable service is available
+                      দীর্ঘ দূরত্বে ক্লান্তি কমায়
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      Controlled temperature of Ambulance
+                      গরম বা আর্দ্র আবহাওয়ায় সুবিধাজনক।
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      Dhaka to All Districts Ambulance is Available
+                      সাশ্রয়ী মূল্যে মানসম্মত সেবা।
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      All Types of Ambulances Services
+                      রোগীর আরাম ও নিরাপত্তা নিশ্চিত।
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      Quality Ac Ambulance Service
+                      রোগীর জন্য অক্সিজেন ফ্রি
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600" />
                     <span className="text-gray-700">
-                      Ac and Oxygen is free in Dhaka City
+                      ২৪/৭ সার্ভিস উপলব্ধ।
                     </span>
                   </div>
                 </div>
@@ -200,44 +193,22 @@ export default function AcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              24 Hours Shikder Ambulance Service in Bangladesh
+              ইমার্জেন্সি এসি অ্যাম্বুলেন্স সার্ভিস ঢাকা সহ সকল জেলায় 
             </h2>
             <p className="text-lg text-gray-600">
-              Emergency Ac Ambulance service is available in the all districts
-              of Bangladesh. Anytime, Anywhere.
+              ঢাকা সহ সকল জেলায় শিকদার অ্যাম্বুলেন্স সার্ভিস রোগীর আরাম, নিরাপত্তা ও দ্রুত সেবা নিশ্চিত করে।
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Emergency Ac Ambulance in Dhaka City
+                রোগীর জীবন রক্ষায় এসি অ্যাম্বুলেন্সের গুরুত্ব
               </h3>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Emergency Ac Ambulance service is available in Dhaka City. This
-                ambulance company provide Emergency ambulance service 24 hours
-                in a day, 7 Days a week, and 365 days a year. The Emergency
-                ambulance in cheap rent of ambulance services. We provide always
-                a Standard ambulance with the proper requirements. Contact us to
-                Get an Emergency ambulance service anywhere in Bangladesh. Fast
-                ambulance service provider Company in Dhaka City. If you need an
-                emergency ambulance then contact us.
+                এসি অ্যাম্বুলেন্স রোগীর জন্য জীবন রক্ষার ক্ষেত্রে অত্যন্ত গুরুত্বপূর্ণ ভূমিকা পালন করে। গরম বা আর্দ্র আবহাওয়ায় রোগী আরামদায়ক পরিবহনের সুবিধা পায়, যা শারীরিক চাপ কমায়। ICU ও লাইফ সাপোর্টসহ আধুনিক চিকিৎসা সরঞ্জাম যাত্রাকালীন রোগীর অবস্থা পর্যবেক্ষণ করতে সাহায্য করে। অভিজ্ঞ প্যারামেডিক স্টাফ জরুরি মুহূর্তে দ্রুত চিকিৎসা সহায়তা প্রদান করে, যা গুরুতর রোগীর জীবন বাঁচাতে গুরুত্বপূর্ণ। দীর্ঘ দূরত্বে রোগীর পরিবহন হলেও কম ক্লান্তি এবং নিরাপদ পরিবহন নিশ্চিত হয়। শিকদার অ্যাম্বুলেন্স সার্ভিসের এসি অ্যাম্বুলেন্স রোগীর আরাম, নিরাপত্তা ও দ্রুত সেবা নিশ্চিত করে, যা রোগীর জীবন রক্ষার জন্য অপরিহার্য।
               </p>
-            </div>
-
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <p className="text-gray-700 leading-relaxed">
-                <strong>Ac Ambulance service</strong> does cost you a bit extra
-                compared to the Non-AC ambulance. If you want to have a smooth
-                and relaxing journey, then a bit of extra cost will not matter
-                to you. For a long journey, Ac Ambulance service is highly
-                recommended. In our Ac Ambulance service, we provide neat and
-                clean bed sheets, stretchers, oxygen cylinder and a first aid
-                box. There is ample room for the patient and his near
-                companions. If you need <strong>Ambulance service</strong> from
-                anywhere in Dhaka city than contact us.
-              </p>
-            </div>
+            </div> 
           </div>
         </div>
       </section>
@@ -247,7 +218,7 @@ export default function AcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              The Facilities Using of Air Conditon Ambulance Service
+              এসি অ্যাম্বুলেন্স সার্ভিস ব্যবহারের সুবিধা সমূহ
             </h2>
           </div>
 
@@ -257,8 +228,7 @@ export default function AcAmbulancePage() {
                 <Thermometer className="h-8 w-8 text-blue-600" />
               </div>
               <p className="text-gray-600">
-                AC ambulances provide a temperature-controlled environment for
-                patients during transport
+                রোগীর জন্য আরামদায়ক পরিবহন এবং যাত্রার সময় কম ক্লান্তি নিশ্চিত করে।
               </p>
             </Card>
 
@@ -267,8 +237,7 @@ export default function AcAmbulancePage() {
                 <Shield className="h-8 w-8 text-green-600" />
               </div>
               <p className="text-gray-600">
-                The cost of AC ambulance services may be higher than non-AC
-                options
+                Tগরম ও আর্দ্র আবহাওয়ায়ও রোগীর আরাম বজায় রাখে।
               </p>
             </Card>
 
@@ -277,8 +246,7 @@ export default function AcAmbulancePage() {
                 <Heart className="h-8 w-8 text-purple-600" />
               </div>
               <p className="text-gray-600">
-                The cost of AC ambulance services may be higher than non-AC
-                options
+                দীর্ঘ দূরত্বে নিরাপদ ও স্বাচ্ছন্দ্যময় পরিবহন প্রদান করে।
               </p>
             </Card>
 
@@ -287,7 +255,7 @@ export default function AcAmbulancePage() {
                 <Clock className="h-8 w-8 text-orange-600" />
               </div>
               <p className="text-gray-600">
-                Many AC ambulance services operate 24/7 for emergency situations
+                সাশ্রয়ী মূল্যে আরামদায়ক এবং নিরাপদ অ্যাম্বুলেন্স পরিবহন নিশ্চিত।
               </p>
             </Card>
           </div>
@@ -299,44 +267,34 @@ export default function AcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              24/7 AC Ambulance Service in Dhaka by Shikder Ambulance
+              সাশ্রয়ী মূল্যে এসি অ্যাম্বুলেন্স সার্ভিস, শিকদার অ্যাম্বুলেন্স সার্ভিস
             </h2>
             <p className="text-center font-semibold">
-              The Quality Ambulance is Granted
+              দীর্ঘ দূরত্বে রোগীর জন্য আরামদায়ক ও নিরাপদ এসি অ্যাম্বুলেন্স সার্ভিস
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">
-                Reliable AC Ambulance Service in Dhaka
+                জরুরি রোগী পরিবহনের জন্য ঢাকায় ২৪/৭ এসি অ্যাম্বুলেন্স সার্ভিস
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                When emergencies happen under Dhaka’s blazing heat, patient
-                comfort becomes vital. Shikder Ambulance offers trusted 24/7 AC
-                Ambulance Service in Dhaka, designed to keep patients cool,
-                safe, and stress-free during every transfer.
+                শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকায় ২৪/৭ এসি অ্যাম্বুলেন্স সার্ভিস প্রদান করছে। জরুরি রোগী পরিবহনের সময় দ্রুত, নিরাপদ এবং আরামদায়ক পরিবহন নিশ্চিত করা হয়। ICU, লাইফ সাপোর্ট ও অভিজ্ঞ প্যারামেডিক স্টাফের মাধ্যমে রোগীর জীবন রক্ষা করা হয়।
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900">
-                Why Choose an Shikder Ac Ambulance?
+                শিকদার অ্যাম্বুলেন্স সার্ভিস কেন নিবেন?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                An air-conditioned ambulance isn’t just about luxury; it helps
-                protect patients from heatstroke, anxiety, and complications
-                caused by extreme temperatures. Elderly patients, cardiac
-                patients, and children often require a controlled environment —
-                something our AC ambulances deliver seamlessly.
+                শিকদার অ্যাম্বুলেন্স সার্ভিস নির্বাচনের প্রধান কারণ হলো ২৪/৭ দ্রুত এবং নির্ভরযোগ্য সেবা। অভিজ্ঞ প্যারামেডিক স্টাফ রোগীর নিরাপত্তা নিশ্চিত করে এবং ICU ও লাইফ সাপোর্টসহ আধুনিক অ্যাম্বুলেন্সের মাধ্যমে আরামদায়ক পরিবহন প্রদান করা হয়। ঢাকার যেকোনো এলাকায় দ্রুত পৌঁছানোর সুবিধা এবং সাশ্রয়ী মূল্যে মানসম্মত সেবা নিশ্চিত করা আমাদের অঙ্গীকার। আপনার প্রিয়জনের জীবন রক্ষা ও নিরাপদ পরিবহনের জন্য শিকদার অ্যাম্বুলেন্স সার্ভিস হলো সবচেয়ে বিশ্বাসযোগ্য নাম।
               </p>
 
               <h3 className="text-2xl font-bold text-gray-900">
-                Comfort and Care You Can Trust
+                শিকদার অ্যাম্বুলেন্স সার্ভিস কেন বিশ্বাস করবেন?
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                At Shikder Ambulance, we combine comfort with safety. Our
-                vehicles are clean, modern, and equipped with advanced cooling
-                systems. Plus, trained staff ensure patients get professional
-                care on the way to hospitals, clinics, or home.
+               শিকদার অ্যাম্বুলেন্স সার্ভিস দীর্ঘ সময় ধরে ঢাকায় বিশ্বস্ত ও মানসম্মত সেবা প্রদান করছে। ২৪/৭ জরুরি সেবা, দ্রুত রেসপন্স এবং সাশ্রয়ী মূল্যে মানসম্মত পরিবহন আমাদের বিশ্বাসযোগ্যতার মূল চাবিকাঠি। রোগী ও পরিবারের জন্য নির্ভরযোগ্য এবং সম্মানজনক সেবা প্রদানই আমাদের প্রধান লক্ষ্য।
               </p>
             </div>
 
@@ -358,55 +316,54 @@ export default function AcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-              Overview of Ac Ambulance Services
+              এসি অ্যাম্বুলেন্স সার্ভিসের সংক্ষিপ্ত বিবরণ
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    Patient Comfort:
+                    রোগীর আরাম বা সুবিধাঃ
                   </h4>
                   <p className="text-gray-600">
-                    Enhances comfort during transport, especially long distances
+                    রোগীর আরাম (Patient Comfort) হলো চিকিৎসা বা পরিবহনের সময় রোগীর শারীরিক ও মানসিক স্বস্তি নিশ্চিত করার প্রক্রিয়া।
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    Temperature Control:
+                    তাপমাত্রা নিয়ন্ত্রণঃ
                   </h4>
                   <p className="text-gray-600">
-                    Maintains a cool, stable environment for patient comfort
+                    Temperature Control হলো পরিবেশ বা যন্ত্রের তাপমাত্রা নির্দিষ্ট সীমার মধ্যে বজায় রাখার প্রক্রিয়া। অ্যাম্বুলেন্সে এটি রোগীর আরাম ও নিরাপত্তা নিশ্চিত করার জন্য অত্যন্ত গুরুত্বপূর্ণ।
                   </p>
                 </div>
               </div>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    Increased Cost:
+                    বিশ্বাসযোগ্য ও নির্ভরযোগ্যঃ
                   </h4>
                   <p className="text-gray-600">
-                    Typically more expensive than non-AC ambulances
+                    রোগী ও পরিবারের জন্য মানসম্মত এবং নিরাপদ পরিবহন নিশ্চিত।
                   </p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">
-                    Medical Stability:
+                    হটলাইন ও অনলাইন বুকিং সুবিধাঃ
                   </h4>
                   <p className="text-gray-600">
-                    Helps regulate body temperature for certain medical
-                    conditions
+                    সহজ এবং দ্রুত বুকিং সম্ভব। যেকোন সময় আমাদের ফোন নাম্বারে কল করুন।
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+            <div className="mt-8 p-6 bg-blue-80 rounded-lg">
               <h4 className="font-semibold text-gray-900 mb-2">
-                Available 24/7:
+                দ্রুত রেসপন্সঃ
               </h4>
               <p className="text-gray-600">
-                No matter the hour, you can count on us for immediate response.{" "}
+                জরুরি মুহূর্তে ২৪/৭ দ্রুত পৌঁছানো যায়।{" "}
               </p>
             </div>
           </div>
@@ -425,22 +382,27 @@ export default function AcAmbulancePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">FAQs</h3>
-                <h4> What Is an AC Ambulance?</h4>
+                <h3 className="text-2xl font-semibold text-gray-900">এসি অ্যাম্বুলেন্স সার্ভিস কি?</h3>
                 <p>
-                  An AC ambulance is fitted with a fully functional
-                  air-conditioning system to control temperature, ensuring the
-                  patient is comfortable throughout the journey, especially
-                  during the scorching heat of Bangladesh.
+                  এসি অ্যাম্বুলেন্স সার্ভিস হলো এমন একটি অ্যাম্বুলেন্স সেবা যেখানে গাড়িতে এয়ার কন্ডিশনিং সুবিধা থাকে।
                 </p>
               </div>
               <div>
-                <h4> What Is an AC Ambulance?</h4>
+                <h3 className="text-2xl font-semibold text-gray-900">কেন এসি অ্যাম্বুলেন্স গুরুত্বপূর্ণ?</h3>
                 <p>
-                  An AC ambulance is fitted with a fully functional
-                  air-conditioning system to control temperature, ensuring the
-                  patient is comfortable throughout the journey, especially
-                  during the scorching heat of Bangladesh.
+                  গরম বা আর্দ্র আবহাওয়ায় রোগীর আরাম এবং দীর্ঘ দূরত্বে যাত্রা কম ক্লান্তিকর করতে এটি অপরিহার্য।
+                </p>
+              </div>
+                <div>
+                <h3 className="text-2xl font-semibold text-gray-900">সেবার খরচ কেমন?</h3>
+                <p>
+                  সাশ্রয়ী মূল্যে মানসম্মত এবং নির্ভরযোগ্য পরিবহন নিশ্চিত করা হয়।
+                </p>
+              </div>
+                <div>
+                <h3 className="text-2xl font-semibold text-gray-900">বুকিং কিভাবে করা যায়?</h3>
+                <p>
+                  হটলাইন ফোন অথবা অনলাইন বুকিং-এর মাধ্যমে সহজে করা যায়।
                 </p>
               </div>
             </div>
@@ -453,27 +415,26 @@ export default function AcAmbulancePage() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Need AC Ambulance Service?
+              ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস দরকার?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Contact us now for immediate assistance. Available 24/7 across
-              Bangladesh.
+              জরুরি মুহূর্তে রোগী পরিবহনের জন্য ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস খুবই গুরুত্বপূর্ণ। শিকদার অ্যাম্বুলেন্স সার্ভিস ২৪/৭ দ্রুত, নিরাপদ এবং আরামদায়ক পরিবহন নিশ্চিত করে।
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">              
+              <Link href={"tel:01627-669222"}> <Button
                 size="lg"
                 className="bg-white text-blue-600 hover:bg-gray-100"
               >
-                <Phone className="h-5 w-5 mr-2" />
-                Call: 01627-669222
-              </Button>
-              <Button
+                <Phone className="h-5 w-5 mr-2"/>
+                কল দিন: 01627-669222
+              </Button></Link>              
+              <Link href={"https://wa.me/01710060020"} ><Button
                 size="lg"
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent"
               >
                 WhatsApp: 017100-60020
-              </Button>
+              </Button> </Link>
             </div>
           </div>
         </div>
