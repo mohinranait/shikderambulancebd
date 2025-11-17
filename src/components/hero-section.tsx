@@ -15,12 +15,19 @@ export function HeroSection() {
               <Badge className="bg-red-500 hover:bg-red-600 text-white px-4 py-2">
                 যেকোন সময়, যেকোন এলাকায়
               </Badge>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-normal">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground ">
                 শিকদার অ্যাম্বুলেন্স সার্ভিস,
                 <span className="text-primary block"> জরুরি সেবা ২৪/৭ </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl">
-                শিকদার অ্যাম্বুলেন্স সার্ভিস, ঢাকা হতে সকল জেলায় রোগী ও লাশ পরিবহনে ইমার্জেন্সি এ্যাম্বুলেন্স সার্ভিস দেওয়া হয়। ঢাকা শহরে ২৪/৭ জরুরি সেবা প্রদানকারী একটি নির্ভরযোগ্য প্রতিষ্ঠান। ঢাকা শহরের যেকোনো স্থান থেকে হাসপাতাল বা বাড়িতে রোগী বা মৃতদেহ পরিবহনের জন্য শিকদার অ্যাম্বুলেন্স সার্ভিসের উপর সম্পূর্ণ নির্ভর করা যায়। আমাদের লক্ষ্য হলো দ্রুত, নিরাপদ ও মানসম্পন্ন অ্যাম্বুলেন্স সেবা নিশ্চিত করা। </p>
+                শিকদার অ্যাম্বুলেন্স সার্ভিস, ঢাকা হতে সকল জেলায় রোগী ও লাশ
+                পরিবহনে ইমার্জেন্সি এ্যাম্বুলেন্স সার্ভিস দেওয়া হয়। ঢাকা শহরে
+                ২৪/৭ জরুরি সেবা প্রদানকারী একটি নির্ভরযোগ্য প্রতিষ্ঠান। ঢাকা
+                শহরের যেকোনো স্থান থেকে হাসপাতাল বা বাড়িতে রোগী বা মৃতদেহ
+                পরিবহনের জন্য শিকদার অ্যাম্বুলেন্স সার্ভিসের উপর সম্পূর্ণ নির্ভর
+                করা যায়। আমাদের লক্ষ্য হলো দ্রুত, নিরাপদ ও মানসম্পন্ন
+                অ্যাম্বুলেন্স সেবা নিশ্চিত করা।{" "}
+              </p>
             </div>
 
             {/* Emergency Contact */}
@@ -75,7 +82,9 @@ export function HeroSection() {
                 </div>
                 <div>
                   <p className="font-semibold">২৪/৭ জরুরী সার্ভিস</p>
-                  <p className="text-sm text-muted-foreground">যেকোন সময়, যেকোন এলাকায়</p>
+                  <p className="text-sm text-muted-foreground">
+                    যেকোন সময়, যেকোন এলাকায়
+                  </p>
                 </div>
               </div>
             </div>
