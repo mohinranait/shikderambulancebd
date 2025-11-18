@@ -1,4 +1,7 @@
-import { getSinglePostBySlug, getSinglePostBySlugForDetailsPage } from "@/actions/postApi";
+import {
+  getSinglePostBySlug,
+  getSinglePostBySlugForDetailsPage,
+} from "@/actions/postApi";
 import BlogView from "@/components/pages/blogs/view-blogs";
 import { BASE_URL } from "@/config/accessEnv";
 import { TPostFormData } from "@/types/post.types";
