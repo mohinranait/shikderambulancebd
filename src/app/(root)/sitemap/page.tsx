@@ -350,19 +350,18 @@ export default function SitemapPage() {
               <Phone className="h-8 w-8" />
             </div>
           </div>
-          <h3 className="text-2xl font-bold mb-2">Need Immediate Help?</h3>
+          <h3 className="text-2xl font-bold mb-2">জরুরি অ্যাম্বুলেন্স দাকার</h3>
           <p className="text-red-100 mb-6">
-            For medical emergencies, don't navigate the website - call us
-            directly!
+            রোগী ও লাশ পরিবহনে ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস পেতে কল করুন
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="bg-white bg-opacity-20 px-6 py-3 rounded-lg">
-              <div className="text-sm text-red-100">Emergency Hotline</div>
-              <div className="text-2xl font-bold">999</div>
+              <div className="text-sm text-red-100">ইমার্জেন্সি হেল্পলাইন</div>
+              <div className="text-2xl font-bold">01627-669222</div>
             </div>
             <div className="bg-white bg-opacity-20 px-6 py-3 rounded-lg">
-              <div className="text-sm text-red-100">Non-Emergency</div>
-              <div className="text-xl font-bold">+880-1234-567890</div>
+              <div className="text-sm text-red-100">যেকোন সময় কল করুন</div>
+              <div className="text-xl font-bold">01713-260042</div>
             </div>
           </div>
         </div>

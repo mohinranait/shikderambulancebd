@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Shikder Ambulance" }],
   creator: "Shikder Ambulance",
   publisher: "Shikder Ambulance",
-  metadataBase: new URL("https://shikderambulance.com"),
+  metadataBase: new URL("https://shikderambulance.com.bd"),
   alternates: {
-    canonical: "https://shikderambulance.com",
+    canonical: "https://shikderambulance.com.bd",
   },
   openGraph: {
-     url: "https://shikderambulance.com",
+     url: "https://shikderambulance.com.bd",
     siteName: "Shikder Ambulance",
     locale: "bn_BD",
     type: "website",
@@ -64,17 +64,11 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="author" content="Shikder Ambulance" />
-        <meta name="rating" content="general" />
-        <link rel="canonical" href="https://shikderambulance.com" />
-        <link
-          rel="icon"
-          href="/favicon.ico"
-          type="image/x-icon"
-        />
-        <meta
+        <meta name="rating" content="general" /> 
+        {/* <meta
           name="google-site-verification"
           content="k9w6p571W9qlAmJr2Q9B-mCZ0Ab9xGP3mgZ9zuv5ssk"
-        />
+        /> */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-JB6HNSXYNH"

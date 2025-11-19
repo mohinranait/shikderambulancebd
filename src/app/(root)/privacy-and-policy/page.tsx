@@ -14,7 +14,7 @@ export default function PrivacyPage() {
               <Shield className="h-10 w-10 text-blue-600" />
             </div>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Privacy Policy: Shikder Ambulance Service
+              Privacy Policy: শিকদার অ্যাম্বুলেন্স সার্ভিস
             </h1>
             <p className="text-lg text-gray-600 mb-5">Last updated: 01-11-2025 </p>
 

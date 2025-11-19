@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "লাশবাহী ফ্রিজিং অ্যাম্বুলেন্স সার্ভিস ঢাকা | শিকদার অ্যাম্বুলেন্স সার্বিস",
     description:
       "Freezing Ambulance Service in Dhaka. It is a dead body carrier freezing ambulance in Bangladesh. 24/7 dead body carrier with advanced freezing technology. Single & double cabin freezer ambulance is available in the all districts of Bangladesh.",
-    url: "https://shikderambulance.com.bd/freezing-ambulance",
+    url: "https://shikderambulance.com.bd/freezing-ambulance-service", 
     siteName: "Shikder Ambulance",
     images: [
       {

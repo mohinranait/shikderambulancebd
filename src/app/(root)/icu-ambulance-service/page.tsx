@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "/images/Life-support-ambulance.jpg",
         width: 1200,
         height: 630,
-        alt: "ICU Ambulance Service in Dhaka - Advanced Life Support - Shikder Ambulance",
+        alt: "ICU Ambulance Service in Dhaka - Shikder Ambulance",
       },
     ],
     locale: "en_US",

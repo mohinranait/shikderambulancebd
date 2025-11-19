@@ -12,7 +12,7 @@ import {
 import ContactForm from "@/components/pages/contact/contact-form";
 
 export const metadata = {
-  title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ২৪/৭ জরুরি অ্যাম্বুলেন্স হেল্পলাইন",
+  title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | জরুরি অ্যাম্বুলেন্স সেবা ২৪/৭",
   description:
     "শিকদার অ্যাম্বুলেন্স সার্ভিসের সাথে যোগাযোগ করুন। ২৪/৭ দ্রুত রেসপন্স, ICU/CCU, লাইফ সাপোর্ট এবং ফ্রিজিং অ্যাম্বুলেন্স সার্ভিস পেতে কল করুন। নিরাপদ রোগী পরিবহন নিশ্চিত।",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata = {
     title: "শিকদার অ্যাম্বুলেন্স সার্ভিস | ২৪/৭ জরুরি অ্যাম্বুলেন্স হেল্পলাইন",
     description:
       "Shikder Ambulance Service in Bangladesh. We provide different types of Ambulances. The Largest and Trusted Ambulacne Company in Bangladesh. When you need Ambulance the Contact Us.",
-    url: "https://shikderambulance.com",
+    url: "https://shikderambulance.com.bd",
     siteName: "Shikder Ambulance",
     images: [
       {

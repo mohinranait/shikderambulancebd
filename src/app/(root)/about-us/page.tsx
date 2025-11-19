@@ -2,6 +2,51 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Heart, Clock, Award, Shield, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "শিকদার অ্যাম্বুলেন্স সার্ভিস, আপনার বিশ্বস্ত জরুরি সেবার সঙ্গী",
+  description:
+    "শিকদার অ্যাম্বুলেন্স সার্ভিস হলো ঢাকার অন্যতম বিশ্বস্ত ও দ্রুতগতির জরুরি মেডিকেল ট্রান্সপোর্ট সার্ভিস। আমরা ২৪/৭ নিরবচ্ছিন্নভাবে  ঢাকা ও আশপাশের এলাকায় রোগী সেবা প্রদান করে থাকি।",
+  keywords:
+    "শিকদার অ্যাম্বুলেন্স সার্ভিস, জরুরি অ্যাম্বুলেন্স সার্ভিস ",
+  authors: [{ name: "Shikder Ambulance" }],
+  openGraph: {
+    title: "শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকা",
+    description:
+      "শিকদার অ্যাম্বুলেন্স সার্ভিস হলো ঢাকার অন্যতম বিশ্বস্ত ও দ্রুতগতির জরুরি মেডিকেল ট্রান্সপোর্ট সার্ভিস।",
+    url: "https://shikderambulance.com.bd/about-us",
+    siteName: "Shikder Ambulance",
+    images: [
+      {
+        url: "/images/Ac Ambulance Service -Shikder  Ambulance.jpg",
+        width: 1200,
+        height: 630,
+        alt: "শিকদার অ্যাম্বুলেন্স সার্ভিস ২৪/৭",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকা",
+    description:
+      "Best AC Ambulance Service in Dhaka. Professional AC ambulance service with temperature control. Available 24/7.",
+    images: ["/images/Ac Ambulance Service -Shikder  Ambulance.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
 
 export default function AboutPage() {
   const stats = [

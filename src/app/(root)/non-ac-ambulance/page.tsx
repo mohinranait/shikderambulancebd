@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       "নন-এসি অ্যাম্বুলেন্স সার্ভিস, ২৪/৭ দ্রুত রোগী পরিবহন সেবা",
     description:
       "ঢাকা এরিয়া জুড়ে সাশ্রয়ী মূল্যে নন-এসি অ্যাম্বুলেন্স সার্ভিস। অভিজ্ঞ প্যারামেডিক স্টাফ ও জরুরি সরঞ্জাম সহ দ্রুত ও নিরাপদ রোগী পরিবহন নিশ্চিত।",
-    url: "https://shikderambulance.com/non-ac-ambulance",
+    url: "https://shikderambulance.com.bd/non-ac-ambulance",
     siteName: "Shikder Ambulance",
     images: [
       {

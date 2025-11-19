@@ -25,7 +25,7 @@ export function ServiceOverview() {
       description:
         "নন-এসি অ্যাম্বুলেন্স সার্ভিস হলো সাশ্রয়ী ও বাজেট-ফ্রেন্ডলি জরুরি পরিবহন ব্যবস্থা। সাধারণ রোগী পরিবহনের জন্য এতে সব প্রয়োজনীয় মৌলিক চিকিৎসা সুবিধা থাকে। কম খরচে দ্রুত রোগীকে হাসপাতাল বা চিকিৎসা কেন্দ্রে পৌঁছে দিতে এই সার্ভিসটি জনপ্রিয়। নিরাপত্তা, সময়মতো সাড়া এবং পেশাদার টিমের সহায়তা এটিকে আরও বিশ্বস্ত করে।",
 
-      image: "/Shikder-Ambulance-Service-Non-Ac-Ambulance.jpg",
+      image: "/শিকদার অ্যাম্বুলেন্স সার্ভিস-নন-এসি-অ্যাম্বুলেন্স সার্ভিস.jpg",
       features: [
         "হুইল চেয়ার",
         "স্ট্রেচার সাপোর্ট",
@@ -117,7 +117,7 @@ export function ServiceOverview() {
                 </div>
 
                <Link href={`${service.link}`}>  <Button variant="outline" className="group bg-transparent">
-                  Learn More
+                  বিস্তারিত জানতে ক্লিক করুন
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button></Link>
               </CardContent>

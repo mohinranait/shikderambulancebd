@@ -9,6 +9,57 @@ import {
   Phone,
   Clock,
 } from "lucide-react";
+import { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title:
+    "Terms & Conditions: শিকদার অ্যাম্বুলেন্স সার্ভিস",
+  description:
+    "Terms & Conditions: শিকদার অ্যাম্বুলেন্স সার্ভিস",
+  keywords:
+    "Terms & Conditions: শিকদার অ্যাম্বুলেন্স সার্ভিস, লাইফ সাপোর্ট অ্যাম্বুলেন্স, ভেন্টিলেটর অ্যাম্বুলেন্স সার্ভিস, অক্সিজেন অ্যাম্বুলেন্স ঢাকা, আইসিইউ অ্যাম্বুলেন্স সার্ভিস, জরুরি অ্যাম্বুলেন্স ঢাকা, ২৪ ঘণ্টা অ্যাম্বুলেন্স সার্ভিস, লাইফ সাপোর্ট এ্যাম্বুলেন্স, কার্ডিয়াক অ্যাম্বুলেন্স",
+  authors: [{ name: "Shikder Ambulance" }],
+  openGraph: {
+    title:
+      "Terms & Conditions: শিকদার অ্যাম্বুলেন্স সার্ভিস",
+    description:
+      "ঢাকায় ২৪/৭ লাইফ সাপোর্ট অ্যাম্বুলেন্স সার্ভিস। ভেন্টিলেটর, অক্সিজেন, কার্ডিয়াক মনিটর, প্রশিক্ষিত মেডিকেল টিমসহ জরুরি রোগী পরিবহন। দ্রুত ও নির্ভরযোগ্য সার্ভিস।",
+    url: "https://shikderambulance.com.bd/terms-and-condition",
+    siteName: "Shikder Ambulance",
+    images: [
+      {
+        url: "/images/Life-support-ambulance.jpg",
+        width: 1200,
+        height: 630,
+        alt: "ICU Ambulance Service in Dhaka - Shikder Ambulance",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms & Conditions",
+    description:
+      "ঢাকায় ২৪/৭ লাইফ সাপোর্ট অ্যাম্বুলেন্স সার্ভিস। ভেন্টিলেটর, অক্সিজেন, কার্ডিয়াক মনিটর, প্রশিক্ষিত মেডিকেল টিমসহ জরুরি রোগী পরিবহন। দ্রুত ও নির্ভরযোগ্য সার্ভিস।.",
+    images: ["/images/icu-ambulance-hero.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://shikderambulance.com.bd/terms-and-condition",
+  },
+};
 
 export default function TermsPage() {
   return (

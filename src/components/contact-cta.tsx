@@ -9,12 +9,10 @@ export function ContactCTA() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Need Emergency Help?
+            জরুরি অ্যাম্বুলেন্স সার্বিস প্রয়োজন?
           </h2>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-            Don't wait in a medical emergency. Our trained professionals are
-            ready to respond 24/7 with all types of emergency Ambulance service.
-            If you need emergency Ambulance Support then call Us.
+            চিকিৎসা জরুরিতে অপেক্ষা করবেন না। আমাদের প্রশিক্ষিত টিম ২৪/৭ প্রস্তুত সব ধরনের ইমার্জেন্সি অ্যাম্বুলেন্স সার্ভিস দিতে। যদি জরুরি অ্যাম্বুলেন্স সাপোর্টের প্রয়োজন হয়, তাহলে এখনই আমাদের কল করুন।
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -25,7 +23,7 @@ export function ContactCTA() {
                 className="bg-red-600 hover:bg-red-700 text-white px-3 gap-0 md:px-8 py-4 text-lg"
               >
                 <Phone className="mr-1 md:mr-2 h-5 w-5" />
-                Emergency: 01627-669222
+                ইমার্জেন্সি হেল্পলাইনঃ 01627-669222
               </Button>
             </Link>
             <Link href={"tel:01710060020"}>
@@ -35,7 +33,7 @@ export function ContactCTA() {
                 className="border-white text-white hover:bg-white hover:text-blue-600 px-2 gap-0 md:px-8 py-4 text-lg bg-transparent"
               >
                 <Phone className="mr-1 md:mr-2 h-5 w-5" />
-                Non-Emergency: 017100-60020
+                যেকোন সময় কল করুনঃ 017100-60020
               </Button>
             </Link>
           </div>
@@ -47,10 +45,9 @@ export function ContactCTA() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 mx-auto mb-4">
                 <Clock className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">24/7 Availability</h3>
+              <h3 className="text-lg font-semibold mb-2">জরুরি সেবা ২৪/৭</h3>
               <p className="text-blue-100">
-                Round-the-clock emergency medical services, every day of the
-                year.
+                শিকদার অ্যাম্বুলেন্স সার্ভিস, ঢাকা শহরের যেকোন এলাকায়, যেকোন সময় জরুরি আ্যাম্বুলেন্স সার্ভিস দেওয়া হয়।
               </p>
             </CardContent>
           </Card>
@@ -61,11 +58,10 @@ export function ContactCTA() {
                 <MapPin className="h-6 w-6" />
               </div>
               <h3 className="text-lg font-semibold mb-2">
-                Dhaka City Coverage
+                ঢাকা সিটি সহ, সকল জেলা
               </h3>
               <p className="text-blue-100">
-                Comprehensive Ambulance coverage across the metropolitan area
-                with multiple stations.
+                ঢাকা থেকে সকল জেলায় রোগী ও লাশ পবিরহনে সকল প্রকার আ্যাম্বুলেন্স সার্ভিস সরবরাহ করা হয়। যেকোন সময় বুকিং করতে কল করুন।
               </p>
             </CardContent>
           </Card>
@@ -75,10 +71,9 @@ export function ContactCTA() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 mx-auto mb-4">
                 <Phone className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">Instant Response</h3>
+              <h3 className="text-lg font-semibold mb-2">দ্রুত রেসপন্স</h3>
               <p className="text-blue-100">
-                Immediate dispatch and GPS tracking for the fastest possible
-                response time.
+                জরুরি মুহর্তে, ঢাকা সিটি সহ যেকোন এলাকা হতে দ্রুত অ্যাম্বুলেন্স সেবা পেতে শিকদার আ্যাম্বুলেন্সকে কল করুন।
               </p>
             </CardContent>
           </Card>
