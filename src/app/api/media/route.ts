@@ -37,11 +37,10 @@ export async function POST(request: NextRequest) {
     });
 
 
-    const { url, format, width, height, bytes: iBytes, secure_url, public_id } = result;
-
-
+    const { format, width, height, bytes: iBytes, secure_url, public_id } = result;
+    
     const newMedia = await Media.create({
-      fileUrl: url,
+      fileUrl: secure_url,
       width,
       height,
       extension: format,
@@ -49,8 +48,6 @@ export async function POST(request: NextRequest) {
       public_id,
       secure_url,
     })
-
-
 
 
     return NextResponse.json({
