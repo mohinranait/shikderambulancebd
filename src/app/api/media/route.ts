@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import Media from "@/models/Media";
-import connectDB from "@/config/mongodb";
+
 import { getAuthUser } from "@/services/isAuth";
 import { writeFile } from "fs/promises";
 import path from "path";
@@ -8,13 +7,10 @@ import os from "os";
 
 import { v2 as cloudinary } from "cloudinary";
 import { nanoid } from "nanoid";
-import { CLOUDINARY_KEY, CLOUDINARY_NAME, CLOUDINARY_SECRET } from "@/config/accessEnv";
+import { applyCloudinaryConfig } from "@/config/loudinary";
+import connectDB from "@/config/mongodb";
+import Media from "@/models/Media";
 
-cloudinary.config({
-  cloud_name: CLOUDINARY_NAME,
-  api_key: CLOUDINARY_KEY,
-  api_secret: CLOUDINARY_SECRET,
-});
 
 
 export async function POST(request: NextRequest) {
@@ -32,13 +28,17 @@ export async function POST(request: NextRequest) {
     const tempFilePath = path.join(os.tmpdir(), `${nanoid()}_${file.name}`);
     await writeFile(tempFilePath, buffer);
 
+    
+    await applyCloudinaryConfig()
+
     const result = await cloudinary.uploader.upload(tempFilePath, {
       folder: "shikder",
     });
 
 
     const { format, width, height, bytes: iBytes, secure_url, public_id } = result;
-    
+
+    await connectDB();
     const newMedia = await Media.create({
       fileUrl: secure_url,
       width,
@@ -67,6 +67,7 @@ export async function POST(request: NextRequest) {
 export async function GET(request: NextRequest) {
   try {
     await connectDB();
+    await applyCloudinaryConfig()
     const decoded = await getAuthUser() as { id: string; email: string };
 
     const userId = decoded?.id;
@@ -101,15 +102,24 @@ export async function GET(request: NextRequest) {
 export async function DELETE(req: NextRequest) {
   try {
     await connectDB();
+    await applyCloudinaryConfig()
     const { searchParams } = new URL(req.url);
     const id = searchParams.get('id');
     if (!id) {
       return NextResponse.json({ error: 'ID is required' }, { status: 400 });
     }
+    // create media entry in database
     const media = await Media.findByIdAndDelete(id);
     if (!media) {
       return NextResponse.json({ error: 'Media not found' }, { status: 404 });
     }
+
+    // Delete existing media from Cloudinary
+    if (media?.public_id) {
+      await cloudinary.uploader.destroy(media.public_id);
+    }
+    
+    
     return NextResponse.json({ message: 'Media deleted successfully', success: true, });
   } catch (error) {
     console.error('Error deleting media:', error);

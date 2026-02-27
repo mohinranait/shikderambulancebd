@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    const decoded = await getAuthUser() as { id: string; email: string }
+    const decoded = (await getAuthUser()) as { id: string; email: string };
     await connectDB();
 
     // Decode token
@@ -90,19 +90,18 @@ export async function POST(request: NextRequest) {
     if (!userId) {
       return NextResponse.json(
         { success: false, message: "unauthorize access" },
-        { status: 401 }
+        { status: 401 },
       );
     }
 
     const body = await request.json();
-
 
     const { postTitle, slug: customSlug, ...rest } = body;
 
     if (!postTitle) {
       return NextResponse.json(
         { success: false, message: "Post title is required" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -115,11 +114,21 @@ export async function POST(request: NextRequest) {
       slug = `${slug}-${Math.random().toString().split(".")[1]}`;
     }
 
+    const readTime =
+      (body.content?.length || 0) +
+      (body.shortDescription?.length || 0) +
+      (body.contents?.reduce(
+        (acc: number, c: { content?: string }) =>
+          acc + (c.content?.length || 0),
+        0,
+      ) || 0);
+
     // Create post
     const post = await Post.create({
       ...rest,
       postTitle,
       slug,
+      readTime,
       author: userId,
     });
 
@@ -132,7 +141,7 @@ export async function POST(request: NextRequest) {
     console.error("POST /api/posts/create error:", error);
     return NextResponse.json(
       { success: false, message: "Something went wrong" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

@@ -28,8 +28,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Check user existence
-    let user = await User.findOne({ email });
-    if (!user) {
+    let userObj = await User.findOne({ email });
+    if (!userObj) {
       return NextResponse.json(
         { success: false, error: "User not found" },
         { status: 404 }
@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Check password
-    const isMatch = await bcrypt.compare(password, user.password);
+    const isMatch = await bcrypt.compare(password, userObj.password);
     if (!isMatch) {
       return NextResponse.json(
         { success: false, error: "Invalid credentials" },
@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Convert to plain object and remove password
-    user = user.toObject();
+    const user = userObj.toObject() as any;
     delete user.password;
 
     // Generate JWT token

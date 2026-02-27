@@ -6,6 +6,7 @@ export type TPostFormData = {
     postTitle: string;
     postName: string;
     slug?: string;
+    readTime?: number;
     shortDescription?: string;
     image?: {
         featuresImage?:  string; 
