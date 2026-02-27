@@ -1,81 +1,26 @@
+import connectDB from "@/config/mongodb";
+import Faq from "@/models/fak.model";
 import {
   ChevronDown,
-  HelpCircle,
   Package,
-  RotateCcw,
-  Truck,
 } from "lucide-react";
 import React from "react";
 
-const FaqComponent = () => {
-  const faqData = [
-    {
-      id: "item-1",
-      icon: Package,
-      title: "শিকদার অ্যাম্বুলেন্স সার্ভিস ২৪/৭ কি সেবা প্রদান করে?",
-      content: [
-        "হ্যাঁ, আমরা ঢাকা শহরে ২৪ ঘন্টা, সপ্তাহের ৭ দিন জরুরি রোগী ও মৃতদেহ পরিবহন সেবা প্রদান করি।",
-      ],
-    },
-    {
-      id: "item-2",
-      icon: Truck,
-      title: "অ্যাম্বুলেন্স বুক করার পদ্ধতি কী?",
-      content: [
-        "আপনি ফোন কল, হটলাইন বা অনলাইন বুকিং-এর মাধ্যমে দ্রুত অ্যাম্বুলেন্স বুক করতে পারেন।",
-      ],
-    },
-    {
-      id: "item-3",
-      icon: Truck,
-      title: "ঢাকার বাইরে কি অ্যাম্বুলেন্স পাওয়া যায়?",
-      content: [
-        "হ্যাঁ, আমরা প্রয়োজন অনুযায়ী ঢাকার বাইরেও রোগী বা মৃতদেহ পরিবহন করি।",
-      ],
-    },
-    {
-      id: "item-4",
-      icon: Truck,
-      title: "সাশ্রয়ী মূল্যের অ্যাম্বুলেন্স কীভাবে পাওয়া যায়?",
-      content: [
-        "আমরা প্রতিযোগিতামূলক এবং বাজেট-ফ্রেন্ডলি মূল্যে দ্রুত ও নিরাপদ পরিবহন নিশ্চিত করি।",
-      ],
-    },
-    {
-      id: "item-5",
-      icon: Truck,
-      title: "অনলাইন বুকিং কি নিরাপদ এবং সহজ?",
-      content: [
-        "হ্যাঁ, অনলাইন বুকিং সম্পূর্ণ নিরাপদ এবং তাৎক্ষণিক নিশ্চিতকরণ পাওয়া যায়।",
-      ],
-    },
-    {
-      id: "item-6",
-      icon: RotateCcw,
-      title: "ঢাকার বাইরে কি সেবা পাওয়া যায়?",
-      content: [
-        "হ্যাঁ, ঢাকার বাইরে রোগী বা মৃতদেহ পরিবহনের জন্য প্রয়োজন অনুযায়ী সার্ভিস রয়েছে।",
-      ],
-    },
-  ];
+export const dynamic = "force-dynamic";
+
+const FaqComponent = async () => {
+  await connectDB();
+  const faqs = await Faq.find({ status: true })
+    .sort({ priority: 1, createdAt: -1 })
+    .limit(6)
+    .lean();
 
   return (
     <>
-      <div className="text-center mb-12">
-        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl mb-6 shadow-lg ">
-          <HelpCircle className="w-8 h-8 text-white" />
-        </div>
-        <h2 className="text-3xl md:text-4xl sm:text-5xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent mb-6 leading-tight">
-          কাষ্টমারদের সচরাচর জিজ্ঞাসা
-        </h2>
-        <p className=" text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          শিকদার অ্যাম্বুলেন্স সার্ভিস ঢাকা শহরে ২৪/৭ জরুরি রোগী ও মৃতদেহ পরিবহন সেবা প্রদান করে। সহজ বুকিং ফোন কল বা অনলাইনের মাধ্যমে করা যায়। সাশ্রয়ী মূল্যে, দ্রুত এবং নিরাপদ পরিবহন নিশ্চিত করা হয়।
-        </p>
-      </div>
       <div className="">
         <div className="space-y-4">
-          {faqData.map((item, index) => {
-            const Icon = item.icon;
+          {faqs.map((item, index) => {
+            const Icon = Package;
             const isFirstItem = index === 0;
 
             return (
@@ -108,10 +53,10 @@ const FaqComponent = () => {
                 </summary>
 
                 {/* Content */}
-                <div className="px-8 pb-8 pt-2 animate-in slide-in-from-top-2 duration-500">
+                <div className="px-8 pb-8 pt-6 animate-in slide-in-from-top-2 duration-500">
                   <div className=" sm:pl-10 md:pl-16">
                     <div className="space-y-4">
-                      {item.content.map((paragraph, pIndex) => (
+                      {item?.contents?.map((paragraph, pIndex) => (
                         <p
                           key={pIndex}
                           className="text-gray-600 leading-relaxed text-balance opacity-0 group-open:opacity-100 transition-opacity duration-700"
