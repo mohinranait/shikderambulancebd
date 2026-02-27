@@ -43,10 +43,10 @@ const commentSchema = z.object({
 type CommentFormData = z.infer<typeof commentSchema>;
 
 type Props = {
-  blog: TPostFormData;
+  blogId: string;
 };
 
-const CommentForm: FC<Props> = ({ blog }) => {
+const CommentForm: FC<Props> = ({ blogId }) => {
   const { user } = useAuth();
 
   const {
@@ -61,7 +61,7 @@ const CommentForm: FC<Props> = ({ blog }) => {
       name: user?.name?.firstName || "",
       content: "",
       star: 5,
-      postId: blog?._id,
+      postId: blogId,
     },
     mode: "onChange", // Real-time validation
   });
@@ -80,7 +80,7 @@ const CommentForm: FC<Props> = ({ blog }) => {
           name: user?.name?.firstName || "",
           content: "",
           star: 5,
-          postId: blog?._id,
+          postId: blogId,
         });
         toast.success("Comment submitted successfully!");
       } else {
@@ -115,13 +115,16 @@ const CommentForm: FC<Props> = ({ blog }) => {
             <div className="flex flex-col gap-4">
               {/* Name Field */}
               <div>
-                <Label htmlFor="name-field" className="mb-2">Full Name</Label>
+                <Label htmlFor="name-field" className="mb-2">
+                  Full Name
+                </Label>
                 <Input
                   type="text"
                   id="name-field"
                   {...register("name")}
-                  className={`focus-visible:border-primary ${errors.name ? "border-red-500" : ""
-                    }`}
+                  className={`focus-visible:border-primary ${
+                    errors.name ? "border-red-500" : ""
+                  }`}
                   placeholder="Full name"
                   disabled={isSubmitting}
                 />
@@ -135,10 +138,13 @@ const CommentForm: FC<Props> = ({ blog }) => {
               {/* Comment Field */}
               <div>
                 <div className="flex justify-between items-center">
-                  <Label htmlFor="content-field" className="mb-2">Comment</Label>
+                  <Label htmlFor="content-field" className="mb-2">
+                    Comment
+                  </Label>
                   <span
-                    className={`text-xs ${contentLength > 500 ? "text-red-500" : "text-gray-500"
-                      }`}
+                    className={`text-xs ${
+                      contentLength > 500 ? "text-red-500" : "text-gray-500"
+                    }`}
                   >
                     {contentLength}/500 characters
                   </span>
@@ -149,8 +155,9 @@ const CommentForm: FC<Props> = ({ blog }) => {
                   rows={3}
                   placeholder="Write your message..."
                   disabled={isSubmitting}
-                  className={`${errors.content ? "border-red-500" : "border-slate-300"
-                    } border m-0 text-slate-800 placeholder:text-slate-400 p-0 focus-visible:outline-offset-0 rounded-md bg-transparent w-full focus-visible:outline-primary py-2 px-3 disabled:opacity-50 disabled:cursor-not-allowed`}
+                  className={`${
+                    errors.content ? "border-red-500" : "border-slate-300"
+                  } border m-0 text-slate-800 placeholder:text-slate-400 p-0 focus-visible:outline-offset-0 rounded-md bg-transparent w-full focus-visible:outline-primary py-2 px-3 disabled:opacity-50 disabled:cursor-not-allowed`}
                 />
                 {errors.content && (
                   <p className="text-red-500 text-xs">
