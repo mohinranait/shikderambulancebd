@@ -1,50 +1,43 @@
-import {
-  getSinglePostBySlug,
-  getSinglePostBySlugForDetailsPage,
-} from "@/actions/postApi";
 import BlogView from "@/components/pages/blogs/view-blogs";
-import { BASE_URL } from "@/config/accessEnv";
-import { TPostFormData } from "@/types/post.types";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import React from "react";
-import "./blog.css";
+import { BASE_URL } from "@/config/accessEnv";
+import { getPostBySlugFromDB } from "@/actions/get-post";
+import { getAllCommentByPostId } from "@/actions/commentApi";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const data = await getSinglePostBySlugForDetailsPage(slug);
-  const post: TPostFormData = data?.payload?.post;
-  const previousImages = post?.image?.featuresImage;
+
+
+export async function generateMetadata(
+  { params }: { params:  Promise<{ slug: string }>  }
+): Promise<Metadata> {
+  const { slug } = await params;;
+  const post = await getPostBySlugFromDB(slug);
+  if (!post) return {};
+
+  const img = post.image?.featuresImage;
 
   return {
-    title: `${post?.seoTitle || post?.postTitle} | Shikder Ambulance`,
-    description: post?.seoDescription || post?.shortDescription,
-    keywords: post?.seoKeyword,
+    title: `${post.seoTitle || post.postTitle} | Shikder Ambulance`,
+    description: post.seoDescription || post.shortDescription,
+    keywords: post.seoKeyword,
     openGraph: {
-      url: `${BASE_URL}/${post?.slug}`,
-      images: [previousImages || ""],
+      url: `${BASE_URL}/${post.slug}`,
+      images: img ? [img] : [],
     },
   };
 }
 
-const BlogDetailsPage = async ({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) => {
-  const { slug } = await params;
-  const data = await getSinglePostBySlugForDetailsPage(slug);
-  const post = data?.payload?.post;
+const BlogDetailsPage = async (
+  { params }: { params: Promise<{ slug: string }> }
+) => {
+  const { slug } = await params; 
+   const postPromise = getPostBySlugFromDB(slug);
+  const post = await postPromise;
+  if (!post) return notFound();
 
-  if (!post) {
-    notFound();
-  }
+  const commentsPromise = getAllCommentByPostId(post?._id!.toString() );
 
-  return <BlogView blog={post} />;
+  return <BlogView blog={post} commentsPromise={commentsPromise} />;
 };
 
 export default BlogDetailsPage;
